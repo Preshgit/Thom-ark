@@ -7,6 +7,8 @@ import Footer from '../components/footer';
 import Hero from '../components/hero';
 import WhoWeAre from '../components/whoweare';
 import DiscoverProducts from '../components/discoverproduct';
+import CoreValuesScroller from '../components/corevaluesscroller';
+import WhatWeOffer from '../components/whatweoffer';
 
 const Page: NextPage = () => {
   const [isDark, setIsDark] = useState(false);
@@ -51,7 +53,9 @@ const Page: NextPage = () => {
 
         {/* Hero Section */}
         <Hero />
+        <CoreValuesScroller />
         <DiscoverProducts />
+        <WhatWeOffer />
         <WhoWeAre />
         {/* Future sections will go here */}
         {/* <CoreValues /> */}

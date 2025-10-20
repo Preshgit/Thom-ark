@@ -7,22 +7,22 @@ import { Phone } from 'lucide-react';
 const products = [
   {
     id: 1,
-    title: 'Polished Aluminium Slate',
+    title: 'Polished Aluminium Roofing',
     image: '/Inner-Content@2x.png',
   },
   {
     id: 2,
-    title: 'Alluminium Doors & Windows',
+    title: 'Aluminium Doors & Windows',
     image: '/Product-Images3@2x.png',
   },
   {
     id: 3,
-    title: 'Casement Alluminium Windows',
+    title: 'Longspan Aluminium Roofing',
     image: '/aluroof.png',
   },
   {
     id: 4,
-    title: 'Longspan Alluminium Roofing',
+    title: 'Casement Aluminium Windows',
     image: '/Product-Images10@2x.png',
   },
   //   {
