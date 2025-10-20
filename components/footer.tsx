@@ -148,7 +148,7 @@ const Footer = () => {
 
       {/* DESKTOP/TABLET FOOTER - Hidden on mobile */}
       <div className='hidden md:block w-full'>
-        <div className='max-w-[1440px] mx-auto px-12 lg:px-20 py-16 lg:py-8'>
+        <div className='max-w-[1440px] mx-auto px-12 lg:px-20 py-16 lg:py-12'>
           {/* Parent Flex Container */}
           <div className='flex items-center justify-between gap-12 lg:gap-20 mb-12 lg:mb-[70px]'>
             {/* Newsletter Section (Left) */}
@@ -164,7 +164,7 @@ const Footer = () => {
 
             {/* Newsletter Input (Right) */}
             <div className='relative max-w-[441px] w-full'>
-              <div className='flex items-center gap-3 border-2 border-border-light dark:border-border-dark bg-black rounded-[14px] px-[29px] py-[16px] bg-white dark:bg-gray-900'>
+              <div className='flex items-center gap-3 border-2 border-border-light dark:border-border-dark light:bg-black rounded-[14px] px-[29px] py-[16px] dark:bg-gray-900'>
                 <Mail className='w-[21.6px] h-[21.6px] text-thom-black dark:text-white flex-shrink-0' />
                 <input
                   type='email'

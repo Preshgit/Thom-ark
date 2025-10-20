@@ -5,6 +5,8 @@ import { useState, useEffect } from 'react';
 import Navs from '../components/navs';
 import Footer from '../components/footer';
 import Hero from '../components/hero';
+import WhoWeAre from '../components/whoweare';
+import DiscoverProducts from '../components/discoverproduct';
 
 const Page: NextPage = () => {
   const [isDark, setIsDark] = useState(false);
@@ -49,7 +51,8 @@ const Page: NextPage = () => {
 
         {/* Hero Section */}
         <Hero />
-
+        <DiscoverProducts />
+        <WhoWeAre />
         {/* Future sections will go here */}
         {/* <CoreValues /> */}
         {/* <Services /> */}

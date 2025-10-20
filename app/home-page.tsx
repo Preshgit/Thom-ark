@@ -50,7 +50,6 @@ import FrameComponent from '../components/hero';
 import CoreValues from '../components/core-values';
 import FrameComponent1 from '../components/frame-component1';
 import ServicesArea from '../components/services-area';
-import AboutArea from '../components/about-area';
 import FrameComponent2 from '../components/frame-component2';
 import BuildingArea from '../components/building-area';
 import ClientModule from '../components/client-module';
@@ -67,7 +66,6 @@ const HomePage: NextPage = () => {
         <FrameComponent1 />
         <ServicesArea />
       </main>
-      <AboutArea />
       <FrameComponent2 />
       <BuildingArea />
       <ClientModule />

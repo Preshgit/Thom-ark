@@ -4,17 +4,26 @@ import { ThemeProvider } from '@mui/material/styles';
 import { AppRouterCacheProvider } from '@mui/material-nextjs/v15-appRouter';
 
 import './global.css';
-
 import muiTheme from '../theme';
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export const metadata = {
+  title: 'Thom-ark',
+  description:
+    'Thom-Ark Nigeria Limited is a resourceful company complementing architectural designs for modernity and environmental sustainability with quality architectural and allied products & services.',
+  icons: {
+    icon: '/favicon.ico',
+    shortcut: '/favicon.ico',
+    apple: '/apple-touch-icon.png', // optional if you have one
+  },
+};
+
+export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang='en'>
       <head>
+        {/* Favicon fallback (Next.js handles it automatically if metadata is set) */}
+        <link rel='icon' href='/favicon.ico' sizes='any' />
+
         {/* Prevent flash of wrong theme */}
         <script
           dangerouslySetInnerHTML={{

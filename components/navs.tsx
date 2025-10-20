@@ -72,11 +72,11 @@ const Navs: React.FC<HeaderProps> = ({ isDark, toggleTheme }) => {
             {/* Logo */}
             <a href='/' className='flex-shrink-0 relative z-50'>
               <Image
-                src='/thom-ark-logo-21@2x.png'
+                src='/thomarklogo.png'
                 alt='Thom-Ark Engineering & Services'
                 width={162}
                 height={74}
-                className='w-32 md:w-40 h-auto'
+                className='w-32 md:w-40 h-auto dark:invert dark:brightness-0 dark:contrast-100'
                 priority
               />
             </a>
