@@ -9,6 +9,8 @@ import WhoWeAre from '../components/whoweare';
 import DiscoverProducts from '../components/discoverproduct';
 import CoreValuesScroller from '../components/corevaluesscroller';
 import WhatWeOffer from '../components/whatweoffer';
+import WhyThomArk from '../components/whythomark';
+import ContactSection from '../components/contactsection';
 
 const Page: NextPage = () => {
   const [isDark, setIsDark] = useState(false);
@@ -57,6 +59,8 @@ const Page: NextPage = () => {
         <DiscoverProducts />
         <WhatWeOffer />
         <WhoWeAre />
+        <WhyThomArk />
+        <ContactSection />
         {/* Future sections will go here */}
         {/* <CoreValues /> */}
         {/* <Services /> */}
