@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import { Phone } from 'lucide-react';
+import { motion } from 'framer-motion';
 
 const heroImages = [
   'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1920&h=1080&fit=crop',
@@ -28,7 +29,7 @@ export default function Hero() {
   const goToSlide = (index: number) => setCurrentIndex(index);
 
   return (
-    <section className='relative w-full h-[90vh] min-h-[600px] overflow-hidden'>
+    <section className='relative w-full h-[60vh] sm:h-[80vh] lg:h-[90vh] min-h-[600px] overflow-hidden'>
       {/* Background Carousel */}
       <div className='absolute inset-0'>
         {heroImages.map((image, index) => (
@@ -41,7 +42,7 @@ export default function Hero() {
             <img
               src={image}
               alt={`Hero slide ${index + 1}`}
-              className='w-full h-full object-cover object-center'
+              className='w-full h-full object-cover object-top sm:object-center'
             />
             <div className='absolute inset-0 bg-black/40' />
           </div>
@@ -53,7 +54,12 @@ export default function Hero() {
         <div className='max-w-[1440px] mx-auto w-full px-6 md:px-16 lg:px-20'>
           <div className='flex flex-col lg:flex-row items-center lg:items-center justify-between gap-12'>
             {/* Left Text Section */}
-            <div className='max-w-3xl space-y-8 text-center lg:text-left'>
+            <motion.div
+              initial={{ opacity: 0, y: 40 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1, ease: 'easeOut' }}
+              className='max-w-3xl space-y-8 text-center lg:text-left'
+            >
               <div className='space-y-6'>
                 <h1 className='font-inter-tight text-white'>
                   <span className='block text-4xl sm:text-5xl md:text-6xl lg:text-[58px] xl:text-[64px] leading-tight font-light'>
@@ -75,10 +81,10 @@ export default function Hero() {
                   Get In Touch
                 </button>
               </div>
-            </div>
+            </motion.div>
 
             {/* Carousel Dots */}
-            <div className='flex items-center justify-center lg:justify-end gap-2'>
+            <div className='flex items-center justify-center lg:justify-end gap-2 mt-8 lg:mt-84'>
               {heroImages.map((_, index) => (
                 <button
                   key={index}
