@@ -10,9 +10,9 @@ const Footer = () => {
           {/* Logo */}
           <div className='w-full'>
             <img
-              src='/thom-ark-logo-22@2x.png'
+              src='/thomarklogo.png'
               alt='Thom-Ark Nigeria Limited'
-              className='h-[60px] w-auto object-contain dark:invert'
+              className='h-[60px] w-auto object-contain dark:invert dark:brightness-0 dark:contrast-100'
             />
           </div>
 
