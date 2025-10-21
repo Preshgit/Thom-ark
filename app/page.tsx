@@ -11,6 +11,7 @@ import CoreValuesScroller from '../components/corevaluesscroller';
 import WhatWeOffer from '../components/whatweoffer';
 import WhyThomArk from '../components/whythomark';
 import ContactSection from '../components/contactsection';
+import ProductsShowcase from '../components/productshowcase';
 
 const Page: NextPage = () => {
   const [isDark, setIsDark] = useState(false);
@@ -61,6 +62,7 @@ const Page: NextPage = () => {
         <WhoWeAre />
         <WhyThomArk />
         <ContactSection />
+        <ProductsShowcase />
         {/* Future sections will go here */}
         {/* <CoreValues /> */}
         {/* <Services /> */}
