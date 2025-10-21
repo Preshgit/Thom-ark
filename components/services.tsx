@@ -10,28 +10,28 @@ const services = [
     title: 'Roofing Systems',
     description:
       'Premium aluminium roofing built to withstand time and elements - crafted for beauty, strength, and reliability.',
-    image: '/Inner-Content@2x.png',
+    image: '/aluroof.png',
   },
   {
     id: 2,
     title: 'Window & Door Systems',
     description:
       'High-performance window and door solutions designed for energy efficiency, security, and aesthetic appeal.',
-    image: '/Inner-Content@2x.png',
+    image: '/aluscrol8.png',
   },
-  {
-    id: 3,
-    title: 'Interio Partitions Wall Systems',
-    description:
-      'Flexible and durable interior partition systems that combine functionality with modern design aesthetics.',
-    image: '/Inner-Content@2x.png',
-  },
+  // {
+  //   id: 3,
+  //   title: 'Interior Partitions Wall Systems',
+  //   description:
+  //     'Flexible and durable interior partition systems that combine functionality with modern design aesthetics.',
+  //   image: '/aluscrol12.png',
+  // },
   {
     id: 4,
     title: 'Curtains Wall Systems',
     description:
       'Innovative curtain wall solutions that provide structural integrity while maximizing natural light.',
-    image: '/Inner-Content@2x.png',
+    image: '/aluscrol15.png',
   },
   {
     id: 5,
@@ -46,12 +46,12 @@ const services = [
       'Sales and Installation Services of Other Building Construction Allied Products',
     description:
       'Comprehensive sales and professional installation services for a wide range of building construction products.',
-    image: '/Inner-Content@2x.png',
+    image: '/aluscrol9.png',
   },
 ];
 
 const Services = () => {
-  const [activeId, setActiveId] = useState(1);
+  const [activeId, setActiveId] = useState(0);
 
   const toggleAccordion = (id: number) => {
     setActiveId(activeId === id ? 0 : id);
@@ -62,7 +62,7 @@ const Services = () => {
       id='services'
       className='w-full bg-white dark:bg-thom-black transition-colors'
     >
-      <div className='max-w-[1440px] mx-auto px-6 md:px-12 lg:px-20 py-8 md:py-12'>
+      <div className='max-w-[1440px] mx-auto px-6 md:px-12 lg:px-20 py-4 md:py-8 lg:py-12'>
         {/* Section Header */}
         <div className='mb-8 md:mb-12'>
           <h2 className='text-[32px] md:text-[40px] lg:text-[48px] font-inter-tight font-bold text-thom-black dark:text-white'>

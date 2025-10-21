@@ -163,7 +163,7 @@ export default function ServicesDetails() {
   ];
 
   return (
-    <section className='py-16 md:py-8 bg-white dark:bg-thom-black transition-colors'>
+    <section className='py-4 md:py-8 lg:py-12 bg-white dark:bg-thom-black transition-colors'>
       <div className='max-w-[1440px] mx-auto px-6 lg:px-20'>
         <div className='flex flex-col lg:flex-row justify-between gap-12'>
           {/* Left Content */}

@@ -82,13 +82,15 @@ const WhyThomArk = () => {
 
         {/* CTA Button */}
         <div className='flex justify-center'>
-          <button
-            onClick={scrollToContact}
-            className='flex items-center gap-2 bg-primary text-white px-8 py-4 rounded-lg text-[16px] md:text-[18px] font-medium hover:bg-primary-hover transition-all shadow-lg hover:shadow-xl'
-          >
-            <Phone className='w-5 h-5' />
-            Contact Us
-          </button>
+          <a href='#contactus'>
+            <button
+              onClick={scrollToContact}
+              className='flex items-center gap-2 bg-primary text-white px-8 py-4 rounded-lg text-[16px] md:text-[18px] font-medium hover:bg-primary-hover transition-all shadow-lg hover:shadow-xl'
+            >
+              <Phone className='w-5 h-5' />
+              Contact Us
+            </button>
+          </a>
         </div>
       </div>
     </section>

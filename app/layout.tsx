@@ -1,7 +1,8 @@
 import { ReactNode } from 'react';
 import { CssBaseline } from '@mui/material';
-import { ThemeProvider } from '@mui/material/styles';
+import { ThemeProvider as MuiThemeProvider } from '@mui/material/styles';
 import { AppRouterCacheProvider } from '@mui/material-nextjs/v15-appRouter';
+import { ThemeProvider as NextThemeProvider } from 'next-themes';
 
 import './global.css';
 import muiTheme from '../theme';
@@ -42,10 +43,17 @@ export default function RootLayout({ children }: { children: ReactNode }) {
       </head>
       <body>
         <AppRouterCacheProvider options={{ enableCssLayer: true }}>
-          <ThemeProvider theme={muiTheme}>
-            <CssBaseline />
-            {children}
-          </ThemeProvider>
+          {/* Wrap your app with NextThemeProvider first */}
+          <NextThemeProvider
+            attribute='class'
+            defaultTheme='system'
+            enableSystem
+          >
+            <MuiThemeProvider theme={muiTheme}>
+              <CssBaseline />
+              {children}
+            </MuiThemeProvider>
+          </NextThemeProvider>
         </AppRouterCacheProvider>
       </body>
     </html>

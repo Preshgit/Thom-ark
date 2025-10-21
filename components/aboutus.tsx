@@ -7,7 +7,7 @@ const Aboutus = () => {
       id='aboutus'
       className='w-full bg-gray-50 dark:bg-thom-black transition-colors'
     >
-      <div className='max-w-[1440px] mx-auto px-6 md:px-12 lg:px-20 py-16 md:py-20 lg:py-24'>
+      <div className='max-w-[1440px] mx-auto px-6 md:px-12 lg:px-20 py-4 md:py-8 lg:py-12'>
         {/* Section Header */}
         <div className='mb-8 md:mb-8'>
           <h2 className='text-[32px] md:text-[40px] lg:text-[48px] font-inter-tight font-bold text-thom-black dark:text-white'>
