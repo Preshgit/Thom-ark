@@ -147,12 +147,12 @@ export default function ServicesDetails() {
   const socialLinks = [
     {
       icon: <FaXTwitter className='w-5 h-5' />,
-      href: 'https://twitter.com/thomark',
+      href: 'https://x.com/Thomark_ng',
       label: 'Twitter',
     },
     {
       icon: <FaInstagram className='w-5 h-5' />,
-      href: 'https://instagram.com/thomark',
+      href: 'https://www.instagram.com/thomark.ng?igsh=ZnVjcHZ2YTM5c2N3',
       label: 'Instagram',
     },
     // {
