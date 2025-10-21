@@ -15,9 +15,8 @@ const Footer = () => {
               className='h-[60px] w-auto object-contain dark:invert dark:brightness-0 dark:contrast-100'
             />
           </div>
-
-          {/* Newsletter Section */}
-          {/* <div className='space-y-4'>
+          {/* Newsletter Section */}{' '}
+          <div className='space-y-4'>
             <div>
               <h2 className='text-[28px] leading-tight font-inter-tight font-bold text-thom-black dark:text-white'>
                 Join Our{' '}
@@ -26,10 +25,9 @@ const Footer = () => {
               <p className='text-[14px] mt-2 text-gray-500 dark:text-gray-400 font-normal'>
                 Subscribe for the latest real estate news and insights
               </p>
-            </div> */}
-
-          {/* Newsletter Input */}
-          {/* <div className='relative'>
+            </div>
+            {/* Newsletter Input */}
+            {/* <div className='relative'>
               <div className='flex items-center gap-3 border border-gray-300 dark:border-gray-700 rounded-[10px] px-4 py-3'>
                 <Mail className='w-5 h-5 text-thom-black dark:text-white flex-shrink-0' />
                 <input
@@ -41,9 +39,8 @@ const Footer = () => {
                   <ArrowRight className='w-4 h-4 text-white' />
                 </button>
               </div>
-            </div>
-          </div> */}
-
+            </div> */}
+          </div>
           {/* Quick Links */}
           <div className='space-y-4'>
             <h3 className='text-[20px] font-inter-tight font-semibold text-thom-black dark:text-white'>
@@ -82,7 +79,6 @@ const Footer = () => {
               </a>
             </nav>
           </div>
-
           {/* Social Links */}
           <div className='space-y-4'>
             <h3 className='text-[20px] font-inter-tight font-semibold text-thom-black dark:text-white'>
@@ -90,33 +86,37 @@ const Footer = () => {
             </h3>
             <div className='space-y-3 text-[16px] text-gray-500 dark:text-gray-400 font-normal'>
               <a
-                href='#instagram'
+                href='https://www.instagram.com/thomark.ng?igsh=ZnVjcHZ2YTM5c2N3'
+                target='_blank'
+                rel='noopener noreferrer'
                 className='block hover:text-thom-black dark:hover:text-white transition-colors'
               >
                 Instagram
               </a>
               <a
-                href='#linkedin'
+                href='https://www.linkedin.com/company/thomark-ng/'
+                target='_blank'
+                rel='noopener noreferrer'
                 className='block hover:text-thom-black dark:hover:text-white transition-colors'
               >
                 Linkedin
               </a>
               <a
-                href='#twitter'
+                href='https://x.com/Thomark_ng'
+                target='_blank'
+                rel='noopener noreferrer'
                 className='block hover:text-thom-black dark:hover:text-white transition-colors'
               >
                 Twitter
               </a>
             </div>
           </div>
-
           {/* Get in Touch */}
           <div className='space-y-4'>
             <h3 className='text-[20px] font-inter-tight font-semibold text-thom-black dark:text-white'>
               Get in Touch
             </h3>
             <div className='space-y-3 text-gray-500 dark:text-gray-400'>
-              {/* Address */}
               <div className='flex items-start gap-3'>
                 <MapPin className='w-4 h-4 flex-shrink-0 mt-1' />
                 <p className='text-[14px] leading-relaxed'>
@@ -124,19 +124,16 @@ const Footer = () => {
                   Bank Anthony Way, Ikeja, Lagos, Nigeria.
                 </p>
               </div>
-              {/* Phone */}
               <div className='flex items-center gap-3'>
                 <Phone className='w-4 h-4 flex-shrink-0' />
                 <p className='text-[14px]'>+234 9023-6129-26</p>
               </div>
-              {/* Email */}
               <div className='flex items-center gap-3'>
                 <Mail className='w-4 h-4 flex-shrink-0' />
                 <p className='text-[14px]'>info@thom-ark.com</p>
               </div>
             </div>
           </div>
-
           {/* Copyright */}
           <div className='pt-6 border-t border-gray-300 dark:border-gray-800'>
             <p className='text-[14px] text-center text-gray-500 dark:text-gray-400 font-normal'>
@@ -146,25 +143,25 @@ const Footer = () => {
         </div>
       </div>
 
-      {/* DESKTOP/TABLET FOOTER - Hidden on mobile */}
+      {/* DESKTOP/TABLET FOOTER */}
       <div className='hidden md:block w-full'>
-        <div className='max-w-[1440px] mx-auto px-12 lg:px-20 py-16 lg:py-12'>
-          {/* Divider */}
-          <div className='w-full h-[1.2px] bg-gray-300 dark:bg-gray-800 mb-8 lg:mb-12' />
-          {/* Parent Flex Container */}
+        <div className='max-w-[1440px] mx-auto px-8 md:px-10 lg:px-20 py-12'>
+          <div className='w-full h-[1.2px] bg-gray-300 dark:bg-gray-800 mb-8' />
           <div className='flex items-center justify-between gap-12 lg:gap-20 mb-12 lg:mb-[70px]'>
-            {/* Newsletter Section (Left) */}
+            {/* Newsletter Section (Left) */}{' '}
             <div className='space-y-1.5 max-w-[510px] flex-shrink-0'>
+              {' '}
               <h2 className='text-[48px] lg:text-[57.6px] leading-[1.1] font-inter-tight font-bold text-thom-black dark:text-white'>
-                Join Our{' '}
-                <i className='font-playfair-display font-normal'>Newsletter</i>
-              </h2>
+                Join Our
+                <i className='font-playfair-display font-normal'>
+                  Newsletter
+                </i>{' '}
+              </h2>{' '}
               <p className='text-[18px] lg:text-[20px] text-gray-500 dark:text-gray-400 font-normal'>
-                Subscribe for the latest real estate news and insights
-              </p>
+                Subscribe for the latest real estate news and insights{' '}
+              </p>{' '}
             </div>
-
-            {/* Newsletter Input (Right) */}
+            {/* Newsletter Input (Right) */}{' '}
             {/* <div className='relative max-w-[441px] w-full'>
               <div className='flex items-center gap-3 border-2 border-border-light dark:border-border-dark light:bg-black rounded-[14px] px-[29px] py-[16px] dark:bg-gray-900'>
                 <Mail className='w-[21.6px] h-[21.6px] text-thom-black dark:text-white flex-shrink-0' />
@@ -179,125 +176,112 @@ const Footer = () => {
               </div>
             </div> */}
           </div>
-
-          {/* Three Column Grid */}
-          <div className='grid grid-cols-1 lg:grid-cols-3 gap-12 lg:gap-16 mb-12 lg:mb-[70px]'>
-            {/* Column 1 - Contact Us */}
-            <div className='space-y-[28.8px]'>
-              <h3 className='text-[24px] lg:text-[28.8px] font-inter-tight font-normal text-thom-black dark:text-white'>
+          {/* Adjust grid for tablet */}
+          <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-10 md:gap-14 lg:gap-20 mb-10'>
+            {/* Contact Info */}
+            <div className='space-y-6'>
+              <h3 className='text-[22px] md:text-[24px] font-inter-tight font-semibold text-thom-black dark:text-white'>
                 Contact us
               </h3>
-              <div className='space-y-[15px] text-gray-500 dark:text-gray-400'>
-                {/* Address */}
-                <div className='flex items-start gap-[14.4px]'>
-                  <MapPin className='w-[19.2px] h-[19.2px] flex-shrink-0 mt-1' />
-                  <p className='text-[16px] lg:text-[18px] leading-relaxed max-w-[385px]'>
-                    Office : Suite C 320, 3rd Floor, Ikeja Plaza, 81, Mobolaji
-                    Bank Anthony Way, Ikeja, Lagos, Nigeria.
+              <div className='space-y-4 text-gray-500 dark:text-gray-400'>
+                <div className='flex items-start gap-3'>
+                  <MapPin className='w-5 h-5 flex-shrink-0 mt-1' />
+                  <p className='text-[15px] md:text-[16px] leading-relaxed max-w-[360px]'>
+                    Suite C 320, 3rd Floor, Ikeja Plaza, 81 Mobolaji Bank
+                    Anthony Way, Ikeja, Lagos, Nigeria.
                   </p>
                 </div>
-                {/* Phone */}
-                <div className='flex items-center gap-[14.4px]'>
-                  <Phone className='w-[19.2px] h-[19.2px] flex-shrink-0' />
-                  <p className='text-[18px] lg:text-[20px]'>
-                    +234 9023-6129-26
-                  </p>
+                <div className='flex items-center gap-3'>
+                  <Phone className='w-5 h-5 flex-shrink-0' />
+                  <p className='text-[16px]'>+234 9023-6129-26</p>
                 </div>
-                {/* Email */}
-                <div className='flex items-center gap-[14.4px]'>
-                  <Mail className='w-[19.2px] h-[19.2px] flex-shrink-0' />
-                  <p className='text-[18px] lg:text-[21.6px]'>
-                    info@thom-ark.com
-                  </p>
+                <div className='flex items-center gap-3'>
+                  <Mail className='w-5 h-5 flex-shrink-0' />
+                  <p className='text-[16px]'>info@thom-ark.com</p>
                 </div>
               </div>
             </div>
 
-            {/* Column 2 - Logo & Quick Links */}
-            <div className='flex flex-col items-center space-y-[38px]'>
-              {/* Logo */}
-              <div className='w-full flex justify-center'>
-                <img
-                  src='/thomarklogo.png'
-                  alt='Thom-Ark Nigeria Limited'
-                  className='h-[48px] w-[220px] object-contain dark:invert dark:brightness-0 dark:contrast-100'
-                />
-              </div>
-
-              {/* Quick Links - Vertical List */}
-              <nav className='flex flex-col items-center space-y-[18px] text-[18px] lg:text-[21px] text-gray-500 dark:text-gray-400 font-normal'>
+            {/* Logo & Links (centered on md) */}
+            <div className='flex flex-col items-center space-y-6'>
+              <img
+                src='/thomarklogo.png'
+                alt='Thom-Ark Nigeria Limited'
+                className='h-[48px] w-[180px] object-contain dark:invert dark:brightness-0 dark:contrast-100'
+              />
+              <nav className='flex flex-col items-center space-y-2 text-[16px] text-gray-500 dark:text-gray-400'>
                 <a
                   href='#home'
-                  className='no-underline hover:text-thom-black dark:hover:text-white transition-colors'
+                  className='hover:text-thom-black dark:hover:text-white transition-colors'
                 >
                   Home
                 </a>
                 <a
                   href='#about'
-                  className='no-underline hover:text-thom-black dark:hover:text-white transition-colors'
+                  className='hover:text-thom-black dark:hover:text-white transition-colors'
                 >
                   About us
                 </a>
                 <a
                   href='#products'
-                  className='no-underline hover:text-thom-black dark:hover:text-white transition-colors'
+                  className='hover:text-thom-black dark:hover:text-white transition-colors'
                 >
                   Products
                 </a>
                 <a
                   href='#services'
-                  className='no-underline hover:text-thom-black dark:hover:text-white transition-colors'
+                  className='hover:text-thom-black dark:hover:text-white transition-colors'
                 >
                   Services
                 </a>
                 <a
                   href='#contact'
-                  className='no-underline hover:text-thom-black dark:hover:text-white transition-colors'
+                  className='hover:text-thom-black dark:hover:text-white transition-colors'
                 >
                   Contact Us
                 </a>
               </nav>
             </div>
 
-            {/* Column 3 - Newsletter Input & Social Links */}
-            <div className='space-y-[85px]'>
-              {/* Social Links */}
-              <div className='space-y-[28.8px] max-w-[136.8px] ml-auto'>
-                <h3 className='text-[24px] lg:text-[26px] font-inter-tight font-normal text-thom-black dark:text-white text-left'>
+            {/* Social Links (right aligned on lg, centered on md) */}
+            <div className='md:flex md:flex-row lg:flex-col md:items-start lg:items-end space-y-6'>
+              <>
+                <h3 className='text-[22px] md:text-[24px] font-inter-tight font-semibold text-thom-black dark:text-white'>
                   Social links
                 </h3>
-                <div className='space-y-[18px] text-[18px] md:text-[21px] text-gray-500 dark:text-gray-400 font-normal text-right'>
+                <div className='md:ml-5 lg:ml-0 block space-y-3 md:flex md:flex-row lg:flex-col md:gap-4 lg:gap-0 text-[16px] text-gray-500 dark:text-gray-400 md:mt-2 lg:mt-0'>
                   <a
-                    href='#instagram'
-                    className='block no-underline hover:text-thom-black dark:hover:text-white transition-colors'
+                    href='https://www.instagram.com/thomark.ng?igsh=ZnVjcHZ2YTM5c2N3'
+                    target='_blank'
+                    rel='noopener noreferrer'
+                    className='block hover:text-thom-black dark:hover:text-white transition-colors'
                   >
                     Instagram
                   </a>
                   <a
-                    href='#linkedin'
-                    className='block no-underline hover:text-thom-black dark:hover:text-white transition-colors'
+                    href='https://www.linkedin.com/company/thomark-ng/'
+                    target='_blank'
+                    rel='noopener noreferrer'
+                    className='block hover:text-thom-black dark:hover:text-white transition-colors'
                   >
                     Linkedin
                   </a>
                   <a
-                    href='#twitter'
-                    className='block no-underline hover:text-thom-black dark:hover:text-white transition-colors'
+                    href='https://x.com/Thomark_ng'
+                    target='_blank'
+                    rel='noopener noreferrer'
+                    className='block hover:text-thom-black dark:hover:text-white transition-colors'
                   >
                     Twitter
                   </a>
                 </div>
-              </div>
+              </>
             </div>
           </div>
-          {/* Divider */}
-          <div className='w-full h-[1.2px] bg-gray-300 dark:bg-gray-800 mb-8 lg:mb-12' />
-
-          {/* Copyright */}
-          <div className='text-center'>
-            <p className='text-[18px] lg:text-[21.6px] text-gray-500 dark:text-gray-400 font-normal'>
-              © Thom-Ark Inc. All Rights Reserved.
-            </p>
-          </div>
+          <div className='w-full h-[1.2px] bg-gray-300 dark:bg-gray-800 mb-6' />
+          <p className='text-center text-[16px] md:text-[17px] text-gray-500 dark:text-gray-400'>
+            © Thom-Ark Inc. All Rights Reserved.
+          </p>
         </div>
       </div>
     </footer>

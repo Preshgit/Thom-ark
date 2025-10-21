@@ -13,6 +13,7 @@ import WhyThomArk from '../components/whythomark';
 import ContactSection from '../components/contactsection';
 import ProductsShowcase from '../components/productshowcase';
 import ServicesDetails from '../components/servicesdetails';
+import Services from '../components/services';
 
 const Page: NextPage = () => {
   const [isDark, setIsDark] = useState(false);
@@ -56,22 +57,28 @@ const Page: NextPage = () => {
         <Navs isDark={isDark} toggleTheme={toggleTheme} />
 
         {/* Hero Section */}
-        <Hero />
+        <section id='home'>
+          <Hero />
+        </section>
         <CoreValuesScroller />
-        <DiscoverProducts />
-        <WhatWeOffer />
-        <WhoWeAre />
-        <WhyThomArk />
-        <ProductsShowcase />
-        <ContactSection />
-        <ServicesDetails />
-        {/* Future sections will go here */}
-        {/* <CoreValues /> */}
-        {/* <Services /> */}
-        {/* <About /> */}
-        {/* etc... */}
-
-        {/* Footer */}
+        {/* Products Showcase */}
+        <section id='products'>
+          <DiscoverProducts />
+        </section>
+        {/* Services Details */}
+        <section id='services'>
+          <Services />
+        </section>
+        <section id='aboutus'>
+          <WhoWeAre />
+          <WhyThomArk />
+          <ProductsShowcase />{' '}
+        </section>
+        {/* Contact Section - Add when ready */}
+        <section id='contactus'>
+          <ContactSection />
+          <ServicesDetails />
+        </section>
         <Footer />
       </div>
     </div>

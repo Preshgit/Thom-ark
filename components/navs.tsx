@@ -11,6 +11,15 @@ interface HeaderProps {
 
 const Navs: React.FC<HeaderProps> = ({ isDark, toggleTheme }) => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [activeSection, setActiveSection] = useState('home');
+
+  const navItems = [
+    { name: 'Home', id: 'home' },
+    { name: 'Products', id: 'products' },
+    { name: 'Services', id: 'services' },
+    { name: 'About Us', id: 'aboutus' },
+    { name: 'Contact Us', id: 'contactus' },
+  ];
 
   useEffect(() => {
     document.body.style.overflow = mobileMenuOpen ? 'hidden' : 'unset';
@@ -18,59 +27,106 @@ const Navs: React.FC<HeaderProps> = ({ isDark, toggleTheme }) => {
       document.body.style.overflow = 'unset';
     };
   }, [mobileMenuOpen]);
+
+  // Scroll spy to detect active section
+  useEffect(() => {
+    const handleScroll = () => {
+      const sections = navItems.map((item) => ({
+        id: item.id,
+        element: document.getElementById(item.id),
+      }));
+
+      const scrollPosition = window.scrollY + 150; // Offset for fixed header
+
+      for (let i = sections.length - 1; i >= 0; i--) {
+        const section = sections[i];
+        if (section.element) {
+          const sectionTop = section.element.offsetTop;
+          if (scrollPosition >= sectionTop) {
+            setActiveSection(section.id);
+            break;
+          }
+        }
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    handleScroll(); // Call once on mount
+
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  const handleThemeToggle = (e: React.MouseEvent) => {
+    // e.preventDefault();
+    // e.stopPropagation();
+    toggleTheme();
+  };
+
+  const scrollToSection = (sectionId: string) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      const offset = 120; // Height of fixed navbar
+      const sectionTop = section.offsetTop - offset;
+      window.scrollTo({
+        top: sectionTop,
+        behavior: 'smooth',
+      });
+      setMobileMenuOpen(false);
+    }
+  };
   return (
-    <nav className='fixed top-0 left-0 w-full bg-white dark:bg-black z-50 shadow-sm transition-colors'>
+    <div className='fixed top-0 left-0 w-full bg-white dark:bg-black z-50 shadow-sm transition-colors'>
       {/* Top Contact Bar */}
       <div className='bg-white dark:bg-thom-black border-b border-gray-200 dark:border-gray-800 transition-colors'>
-        <div className='max-w-[1440px] mx-auto px-6 lg:px-20 py-1'>
+        <div className='max-w-[1440px] mx-auto px-6 lg:px-20 py-3'>
           <div className='flex flex-wrap items-center justify-between gap-4 text-sm md:text-base'>
             {/* Contact Info */}
             <div className='flex flex-wrap items-center gap-4 md:gap-6 lg:gap-8'>
-              {/* Mail (icon only on mobile) */}
+              {/* Mail */}
               <a
                 href='mailto:info@thom-ark.com'
-                className='flex items-center gap-2 text-thom-black dark:text-white hover:text-primary transition-colors'
+                className='flex items-center gap-2 text-thom-black dark:text-white hover:text-primary dark:hover:text-slate-300 transition-colors'
                 aria-label='Send email'
               >
-                <Mail className='w-5 h-5 flex-shrink-0' />
+                <Mail className='w-4 h-4 flex-shrink-0' />
                 <span className='hidden sm:inline'>info@thom-ark.com</span>
-              </a>
-
-              <div className='h-6 w-px bg-gray-300 dark:bg-gray-700 hidden sm:block' />
-
-              {/* Address (always visible) */}
-              <a
-                href='#'
-                className='flex items-center gap-2 text-thom-black dark:text-white hover:text-primary transition-colors'
-                aria-label='Location'
-              >
-                <MapPin className='w-5 h-5 flex-shrink-0' />
-                <span className='hidden md:inline'>Ikeja, Lagos, Nigeria.</span>
               </a>
 
               <div className='h-6 w-px bg-gray-300 dark:bg-gray-700 hidden md:block' />
 
-              {/* Phone (icon only on mobile) */}
+              {/* Phone */}
               <a
                 href='tel:+2349023612926'
-                className='flex items-center gap-2 text-thom-black dark:text-white hover:text-primary transition-colors'
+                className='flex items-center gap-2 text-thom-black dark:text-white hover:text-primary dark:hover:text-slate-300 transition-colors'
                 aria-label='Call Thom-Ark'
               >
-                <Phone className='w-5 h-5 flex-shrink-0' />
+                <Phone className='w-4 h-4 flex-shrink-0' />
                 <span className='hidden sm:inline'>+234 9023-6129-26</span>
               </a>
+
+              <div className='h-6 w-px bg-gray-300 dark:bg-gray-700 hidden sm:block' />
+
+              {/* Address */}
+              <p
+                className='flex items-center gap-2 text-thom-black dark:text-white hover:text-primary dark:hover:text-slate-300 transition-colors cursor-default'
+                aria-label='View location'
+              >
+                <MapPin className='w-4 h-4 flex-shrink-0' />
+                <span>Ikeja, Lagos, Nigeria.</span>
+              </p>
             </div>
 
-            {/* Theme Toggle (now visible on all screens) */}
+            {/* Theme Toggle */}
             <button
-              onClick={toggleTheme}
-              className='p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors text-thom-black dark:text-yellow-400'
+              onClick={handleThemeToggle}
+              className='p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors text-thom-black dark:text-yellow-400 relative z-[60]'
               aria-label='Toggle theme'
+              type='button'
             >
               {isDark ? (
-                <Sun className='w-5 h-5 text-yellow-400' /> // Bright sun in dark mode
+                <Sun className='w-5 h-5 text-white' />
               ) : (
-                <Moon className='w-5 h-5 text-gray-700' /> // Dark moon in light mode
+                <Moon className='w-5 h-5 text-gray-700' />
               )}
             </button>
           </div>
@@ -78,11 +134,14 @@ const Navs: React.FC<HeaderProps> = ({ isDark, toggleTheme }) => {
       </div>
 
       {/* Main Header */}
-      <nav className='bg-white dark:bg-thom-black sticky top-0 z-50 transition-colors border-b border-gray-200 dark:border-gray-800'>
+      <header className='bg-white dark:bg-thom-black transition-colors border-b border-gray-200 dark:border-gray-800'>
         <nav className='max-w-[1440px] mx-auto px-6 lg:px-20 py-4'>
           <div className='flex items-center justify-between'>
             {/* Logo */}
-            <a href='/' className='flex-shrink-0 relative z-50'>
+            <button
+              onClick={() => scrollToSection('home')}
+              className='flex-shrink-0 relative z-50 cursor-pointer'
+            >
               <Image
                 src='/thomarklogo.png'
                 alt='Thom-Ark Engineering & Services'
@@ -91,25 +150,23 @@ const Navs: React.FC<HeaderProps> = ({ isDark, toggleTheme }) => {
                 className='w-32 md:w-40 h-auto dark:invert dark:brightness-0 dark:contrast-100'
                 priority
               />
-            </a>
+            </button>
 
             {/* Desktop Nav */}
             <div className='hidden lg:flex items-center bg-gray-50 dark:bg-gray-900 border border-gray-200 dark:border-gray-800 rounded-full px-12 py-2 gap-3.5'>
-              {['Home', 'Products', 'Services', 'About Us', 'Contact Us'].map(
-                (item) => (
-                  <a
-                    key={item}
-                    href={`#${item.toLowerCase().replace(/\s+/g, '')}`} // Link to section IDs
-                    className={`px-6 py-2 rounded-full font-medium transition-all ${
-                      item === 'Home'
-                        ? 'bg-primary text-white hover:bg-primary-hover'
-                        : 'text-thom-black dark:text-white hover:bg-white dark:hover:bg-gray-800'
-                    }`}
-                  >
-                    {item}
-                  </a>
-                )
-              )}
+              {navItems.map((item) => (
+                <button
+                  key={item.id}
+                  onClick={() => scrollToSection(item.id)}
+                  className={`px-6 py-2 rounded-full font-medium transition-all ${
+                    activeSection === item.id
+                      ? 'bg-primary text-white'
+                      : 'text-thom-black dark:text-white hover:bg-white dark:hover:bg-gray-800'
+                  }`}
+                >
+                  {item.name}
+                </button>
+              ))}
             </div>
 
             {/* CTA Button - Desktop */}
@@ -117,18 +174,18 @@ const Navs: React.FC<HeaderProps> = ({ isDark, toggleTheme }) => {
               href='https://cal.com/thomas-akintayo-iewl1u/secret'
               target='_blank'
               rel='noopener noreferrer'
+              className='hidden lg:flex items-center gap-2 bg-primary text-white px-6 py-3 rounded-lg font-medium hover:bg-primary-hover transition-all'
             >
-              <button className='hidden lg:flex items-center gap-2 bg-primary text-white px-6 py-3 rounded-lg font-medium hover:bg-primary-hover transition-all cursor-pointer'>
-                <Phone className='w-5 h-5' />
-                Get In Touch
-              </button>
+              <Phone className='w-5 h-5' />
+              Get In Touch
             </a>
 
             {/* Mobile Menu Toggle */}
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className='lg:hidden relative z-50 p-2 text-thom-black dark:text-white'
+              className='lg:hidden relative z-[60] p-2 text-thom-black dark:text-white'
               aria-label='Toggle menu'
+              type='button'
             >
               <div className='w-6 h-6 flex items-center justify-center'>
                 <div className='relative w-6 h-5 flex flex-col justify-between'>
@@ -170,30 +227,29 @@ const Navs: React.FC<HeaderProps> = ({ isDark, toggleTheme }) => {
           }`}
         >
           <nav className='max-w-[1440px] mx-auto px-6 py-2 space-y-2'>
-            {['Home', 'Products', 'Services', 'About Us', 'Contact Us'].map(
-              (item) => (
-                <a
-                  key={item}
-                  href={`#${item.toLowerCase().replace(/\s+/g, '')}`} // Link to section IDs
-                  className={`block px-6 py-2 text-lg font-medium rounded-lg transition-all ${
-                    item === 'Home'
-                      ? 'bg-primary text-white'
-                      : 'text-thom-black dark:text-white hover:bg-gray-100 dark:hover:bg-gray-800'
-                  }`}
-                  onClick={() => setMobileMenuOpen(false)}
-                >
-                  {item}
-                </a>
-              )
-            )}
+            {navItems.map((item) => (
+              <button
+                key={item.id}
+                onClick={() => scrollToSection(item.id)}
+                className={`w-full text-left px-6 py-2 text-lg font-medium rounded-lg transition-all ${
+                  activeSection === item.id
+                    ? 'bg-primary text-white'
+                    : 'text-thom-black dark:text-white hover:bg-gray-100 dark:hover:bg-gray-800'
+                }`}
+              >
+                {item.name}
+              </button>
+            ))}
             <a
               href='https://cal.com/thomas-akintayo-iewl1u/secret'
               target='_blank'
               rel='noopener noreferrer'
+              className='block'
             >
               <button
                 className='w-full flex items-center justify-center gap-2 bg-primary text-white px-6 py-2 rounded-lg font-medium hover:bg-primary-hover transition-all mt-4'
                 onClick={() => setMobileMenuOpen(false)}
+                type='button'
               >
                 <Phone className='w-5 h-5' />
                 Get In Touch
@@ -201,8 +257,8 @@ const Navs: React.FC<HeaderProps> = ({ isDark, toggleTheme }) => {
             </a>
           </nav>
         </div>
-      </nav>
-    </nav>
+      </header>
+    </div>
   );
 };
 

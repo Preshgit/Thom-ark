@@ -29,7 +29,10 @@ export default function Hero() {
   const goToSlide = (index: number) => setCurrentIndex(index);
 
   return (
-    <section className='relative w-full h-[60vh] sm:h-[80vh] lg:h-[90vh] min-h-[600px] overflow-hidden mt-24'>
+    <section
+      id='home'
+      className='relative w-full h-[60vh] sm:h-[80vh] lg:h-[90vh] min-h-[600px] overflow-hidden mt-24'
+    >
       {/* Background Carousel */}
       <div className='absolute inset-0'>
         {heroImages.map((image, index) => (
@@ -74,12 +77,13 @@ export default function Hero() {
                   ceiling systems designed to redefine modern spaces.
                 </p>
               </div>
-
               <div className='flex justify-center lg:justify-start'>
-                <button className='flex items-center gap-2 bg-primary text-white px-6 py-3.5 rounded-none text-lg font-medium hover:bg-primary-hover transition-all border border-white/10'>
-                  <Phone className='w-5 h-5' />
-                  Get In Touch
-                </button>
+                <a
+                  href='#contactus'
+                  className='flex items-center gap-2 bg-primary text-white px-6 py-3.5 rounded-none text-lg font-medium hover:bg-primary-hover transition-all border border-white/10'
+                >
+                  Contact Us
+                </a>
               </div>
             </motion.div>
 
