@@ -1,9 +1,12 @@
 import React from 'react';
 import Image from 'next/image';
 
-const WhoWeAre = () => {
+const Aboutus = () => {
   return (
-    <section className='w-full bg-gray-50 dark:bg-thom-black transition-colors'>
+    <section
+      id='aboutus'
+      className='w-full bg-gray-50 dark:bg-thom-black transition-colors'
+    >
       <div className='max-w-[1440px] mx-auto px-6 md:px-12 lg:px-20 py-16 md:py-20 lg:py-24'>
         {/* Section Header */}
         <div className='mb-8 md:mb-8'>
@@ -74,4 +77,4 @@ const WhoWeAre = () => {
   );
 };
 
-export default WhoWeAre;
+export default Aboutus;

@@ -50,7 +50,7 @@ const services = [
   },
 ];
 
-const WhatWeOffer = () => {
+const Services = () => {
   const [activeId, setActiveId] = useState(1);
 
   const toggleAccordion = (id: number) => {
@@ -58,7 +58,10 @@ const WhatWeOffer = () => {
   };
 
   return (
-    <section className='w-full bg-white dark:bg-thom-black transition-colors'>
+    <section
+      id='services'
+      className='w-full bg-white dark:bg-thom-black transition-colors'
+    >
       <div className='max-w-[1440px] mx-auto px-6 md:px-12 lg:px-20 py-8 md:py-12'>
         {/* Section Header */}
         <div className='mb-8 md:mb-12'>
@@ -162,4 +165,4 @@ const WhatWeOffer = () => {
   );
 };
 
-export default WhatWeOffer;
+export default Services;
