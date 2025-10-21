@@ -5,13 +5,14 @@ import { useState, useEffect } from 'react';
 import Navs from '../components/navs';
 import Footer from '../components/footer';
 import Hero from '../components/hero';
-import WhoWeAre from '../components/whoweare';
+import WhoWeAre from '../components/aboutus';
 import DiscoverProducts from '../components/discoverproduct';
 import CoreValuesScroller from '../components/corevaluesscroller';
-import WhatWeOffer from '../components/whatweoffer';
+import WhatWeOffer from '../components/services';
 import WhyThomArk from '../components/whythomark';
 import ContactSection from '../components/contactsection';
 import ProductsShowcase from '../components/productshowcase';
+import ServicesDetails from '../components/servicesdetails';
 
 const Page: NextPage = () => {
   const [isDark, setIsDark] = useState(false);
@@ -61,8 +62,9 @@ const Page: NextPage = () => {
         <WhatWeOffer />
         <WhoWeAre />
         <WhyThomArk />
-        <ContactSection />
         <ProductsShowcase />
+        <ContactSection />
+        <ServicesDetails />
         {/* Future sections will go here */}
         {/* <CoreValues /> */}
         {/* <Services /> */}

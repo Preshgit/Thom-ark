@@ -29,7 +29,7 @@ export default function Hero() {
   const goToSlide = (index: number) => setCurrentIndex(index);
 
   return (
-    <section className='relative w-full h-[60vh] sm:h-[80vh] lg:h-[90vh] min-h-[600px] overflow-hidden'>
+    <section className='relative w-full h-[60vh] sm:h-[80vh] lg:h-[90vh] min-h-[600px] overflow-hidden mt-24'>
       {/* Background Carousel */}
       <div className='absolute inset-0'>
         {heroImages.map((image, index) => (

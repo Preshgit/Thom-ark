@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useState } from 'react';
-import { Phone, CheckCircle } from 'lucide-react';
+import { CheckCircle } from 'lucide-react';
 
 interface FormData {
   firstName: string;
@@ -99,7 +99,7 @@ const ContactSection = () => {
 
   return (
     <section
-      id='contact'
+      id='contactus'
       className='w-full bg-white dark:bg-thom-black transition-colors'
     >
       <div className='max-w-[1440px] mx-auto px-6 md:px-12 lg:px-20 py-16 md:py-20 lg:py-24'>
@@ -244,7 +244,6 @@ const ContactSection = () => {
                 disabled={isSubmitting}
                 className='w-full flex items-center justify-center gap-2 bg-primary text-white px-8 py-4 rounded-lg text-[16px] md:text-[18px] font-medium hover:bg-primary-hover transition-all shadow-lg hover:shadow-xl disabled:opacity-50 disabled:cursor-not-allowed'
               >
-                <Phone className='w-5 h-5' />
                 {isSubmitting ? 'Sending...' : 'Send'}
               </button>
 

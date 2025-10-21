@@ -17,7 +17,7 @@ const Footer = () => {
           </div>
 
           {/* Newsletter Section */}
-          <div className='space-y-4'>
+          {/* <div className='space-y-4'>
             <div>
               <h2 className='text-[28px] leading-tight font-inter-tight font-bold text-thom-black dark:text-white'>
                 Join Our{' '}
@@ -26,10 +26,10 @@ const Footer = () => {
               <p className='text-[14px] mt-2 text-gray-500 dark:text-gray-400 font-normal'>
                 Subscribe for the latest real estate news and insights
               </p>
-            </div>
+            </div> */}
 
-            {/* Newsletter Input */}
-            <div className='relative'>
+          {/* Newsletter Input */}
+          {/* <div className='relative'>
               <div className='flex items-center gap-3 border border-gray-300 dark:border-gray-700 rounded-[10px] px-4 py-3'>
                 <Mail className='w-5 h-5 text-thom-black dark:text-white flex-shrink-0' />
                 <input
@@ -42,7 +42,7 @@ const Footer = () => {
                 </button>
               </div>
             </div>
-          </div>
+          </div> */}
 
           {/* Quick Links */}
           <div className='space-y-4'>
@@ -149,6 +149,8 @@ const Footer = () => {
       {/* DESKTOP/TABLET FOOTER - Hidden on mobile */}
       <div className='hidden md:block w-full'>
         <div className='max-w-[1440px] mx-auto px-12 lg:px-20 py-16 lg:py-12'>
+          {/* Divider */}
+          <div className='w-full h-[1.2px] bg-gray-300 dark:bg-gray-800 mb-8 lg:mb-12' />
           {/* Parent Flex Container */}
           <div className='flex items-center justify-between gap-12 lg:gap-20 mb-12 lg:mb-[70px]'>
             {/* Newsletter Section (Left) */}
@@ -163,7 +165,7 @@ const Footer = () => {
             </div>
 
             {/* Newsletter Input (Right) */}
-            <div className='relative max-w-[441px] w-full'>
+            {/* <div className='relative max-w-[441px] w-full'>
               <div className='flex items-center gap-3 border-2 border-border-light dark:border-border-dark light:bg-black rounded-[14px] px-[29px] py-[16px] dark:bg-gray-900'>
                 <Mail className='w-[21.6px] h-[21.6px] text-thom-black dark:text-white flex-shrink-0' />
                 <input
@@ -175,7 +177,7 @@ const Footer = () => {
                   <ArrowRight className='w-5 h-5 text-white' />
                 </button>
               </div>
-            </div>
+            </div> */}
           </div>
 
           {/* Three Column Grid */}
@@ -223,7 +225,7 @@ const Footer = () => {
               </div>
 
               {/* Quick Links - Vertical List */}
-              <nav className='flex flex-col items-center space-y-[19.2px] text-[18px] lg:text-[21.6px] text-gray-500 dark:text-gray-400 font-normal'>
+              <nav className='flex flex-col items-center space-y-[18px] text-[18px] lg:text-[21px] text-gray-500 dark:text-gray-400 font-normal'>
                 <a
                   href='#home'
                   className='no-underline hover:text-thom-black dark:hover:text-white transition-colors'
@@ -264,7 +266,7 @@ const Footer = () => {
                 <h3 className='text-[24px] lg:text-[26px] font-inter-tight font-normal text-thom-black dark:text-white text-left'>
                   Social links
                 </h3>
-                <div className='space-y-[19.2px] text-[18px] lg:text-[21.6px] text-gray-500 dark:text-gray-400 font-normal text-right'>
+                <div className='space-y-[18px] text-[18px] md:text-[21px] text-gray-500 dark:text-gray-400 font-normal text-right'>
                   <a
                     href='#instagram'
                     className='block no-underline hover:text-thom-black dark:hover:text-white transition-colors'

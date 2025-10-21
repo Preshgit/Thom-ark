@@ -27,7 +27,7 @@ const row3Images = [
 
 export default function ProductsShowcase() {
   return (
-    <section className='py-16 md:py-24 bg-white dark:bg-thom-black transition-colors overflow-hidden'>
+    <section className='py-16 md:py-16 bg-white dark:bg-thom-black transition-colors overflow-hidden'>
       <div className='max-w-[1440px] mx-auto px-6 lg:px-20 mb-12'>
         <div className='text-center space-y-4'>
           <h2 className='text-3xl md:text-4xl lg:text-5xl font-bold text-thom-black dark:text-white font-inter-tight'>
