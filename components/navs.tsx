@@ -171,7 +171,7 @@ const Navs: React.FC<HeaderProps> = ({ isDark, toggleTheme }) => {
 
             {/* CTA Button - Desktop */}
             <a
-              href='https://cal.com/thomas-akintayo-iewl1u/secret'
+              href='https://cal.com/thomas-akintayo-iewl1u/meeting'
               target='_blank'
               rel='noopener noreferrer'
               className='hidden lg:flex items-center gap-2 bg-primary text-white px-6 py-3 rounded-lg font-medium hover:bg-primary-hover transition-all'
@@ -220,7 +220,7 @@ const Navs: React.FC<HeaderProps> = ({ isDark, toggleTheme }) => {
 
         {/* Mobile Menu */}
         <div
-          className={`lg:hidden fixed left-0 right-0 top-[128px] bg-white dark:bg-thom-black z-40 shadow-2xl transition-all duration-300 ease-in-out border-t border-gray-200 dark:border-gray-800 ${
+          className={`lg:hidden fixed left-0 right-0 top-[128px] bg-white dark:bg-thom-black z-40 shadow-2xl transition-all duration-300 ease-in-out border-t border-gray-200 dark:border-gray-800 mt-4 ${
             mobileMenuOpen
               ? 'translate-y-0 opacity-100'
               : '-translate-y-full opacity-0'
@@ -241,7 +241,7 @@ const Navs: React.FC<HeaderProps> = ({ isDark, toggleTheme }) => {
               </button>
             ))}
             <a
-              href='https://cal.com/thomas-akintayo-iewl1u/secret'
+              href='https://cal.com/thomas-akintayo-iewl1u/meeting'
               target='_blank'
               rel='noopener noreferrer'
               className='block'

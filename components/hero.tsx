@@ -64,12 +64,12 @@ export default function Hero() {
               className='max-w-3xl space-y-8 text-center lg:text-left'
             >
               <div className='space-y-6'>
-                <h1 className='font-inter-tight text-white'>
+                <h1 className='font-inter-tight text-white mt-4'>
                   <span className='block text-4xl sm:text-5xl md:text-6xl lg:text-[58px] xl:text-[64px] leading-tight font-light'>
-                    Quality Architectural &
+                    Innovative Architectural &
                   </span>
                   <span className='block font-playfair-display italic font-normal text-3xl sm:text-4xl md:text-5xl lg:text-[56px] xl:text-[64px] leading-tight mt-2'>
-                    Allied Products & Services
+                    Allied Solutions for Modern Living
                   </span>
                 </h1>
                 <p className='text-base sm:text-lg md:text-xl lg:text-2xl text-white/90 leading-relaxed max-w-2xl mx-auto lg:mx-0'>

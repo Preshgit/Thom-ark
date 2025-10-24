@@ -4,17 +4,17 @@ import { useEffect, useRef } from 'react';
 
 const row1Images = [
   '/aluscrol1.png',
-  '/aluscrol2.png',
-  '/aluscrol3.png',
-  '/aluscrol4.png',
-  '/aluscrol5.png',
+  '/aluscrol11.png',
+  '/aluscrol7.png',
+  '/aluscrol6.png',
+  '/aluscrol13.png',
 ];
 
 const row2Images = [
-  '/aluscrol6.png',
-  '/aluscrol7.png',
-  '/aluscrol8.png',
-  '/aluscrol9.png',
+  '/aluscrol3.png',
+  '/aluscrol4.png',
+  '/aluscrol5.png',
+  '/aluscrol2.png',
 ];
 
 const row3Images = [
