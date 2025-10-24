@@ -101,7 +101,7 @@ const Navs: React.FC<HeaderProps> = ({ isDark, toggleTheme }) => {
                 aria-label='Call Thom-Ark'
               >
                 <Phone className='w-4 h-4 flex-shrink-0' />
-                <span className='hidden sm:inline'>+234 9023-6129-26</span>
+                <span className='hidden sm:inline'>+234-902-361-2926</span>
               </a>
 
               <div className='h-6 w-px bg-gray-300 dark:bg-gray-700 hidden sm:block' />
