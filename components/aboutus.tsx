@@ -14,13 +14,13 @@ const Aboutus = () => {
             Who We <i className='font-playfair-display font-normal'>Are</i>
           </h2>
           <div className='w-32 h-1 bg-primary mt-2' />
-          <p className='mt-4 text-[14px] md:text-[16px] text-gray-600 dark:text-gray-400 max-w-[300px]'>
+          <p className='mt-4 text-[14px] md:text-[18px] text-gray-600 dark:text-gray-400 max-w-[300px]'>
             Crafting quality solutions <br /> with integrity and innovation.
           </p>
         </div>
 
         {/* Content Grid */}
-        <div className='grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-start'>
+        <div className='grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-8 items-start'>
           {/* Left - Image */}
           <div className='w-full hidden lg:block relative lg:h-[90vh] min-h-[500px] overflow-hidden'>
             <Image
@@ -34,41 +34,57 @@ const Aboutus = () => {
           </div>
 
           {/* Right - Content */}
-          <div className='space-y-8'>
+          <div className='space-y-6'>
             {/* Logo */}
-            <div className='mb-8 hidden lg:block'>
+            <div className='mb-6 hidden lg:block'>
               <img
                 src='/thomarklogo.png'
                 alt='Thom-Ark Nigeria Limited'
-                className='h-[60px] md:h-[80px] w-auto object-contain dark:invert dark:brightness-0 dark:contrast-100'
+                className='h-[50px] md:h-[80px] w-auto object-contain dark:invert dark:brightness-0 dark:contrast-100'
               />
             </div>
 
             {/* Company Description */}
-            <div className='space-y-6 text-gray-700 dark:text-gray-300'>
-              <p className='text-[15px] md:text-[16px] lg:text-[17px] leading-relaxed'>
-                Thom-Ark Nigeria Limited is a resourceful (limited liability)
-                company complementing architectural designs for modernity and
-                environmental sustainability with general or customized or
-                innovative architectural and allied products & services.
+            <div className='space-y-4 text-gray-700 dark:text-gray-300'>
+              <p className='text-[15px] md:text-[16px] lg:text-[16px]'>
+                At Thom-Ark Nigeria Limited, we deliver not only quality but
+                innovative architectural and allied solutions (products &amp;
+                services) that redefine modern living while promoting
+                environmental sustainability. As a trusted limited liability
+                company, we specialize in complementing architectural designs
+                with cutting-edge products and customized services that
+                transform spaces into comfortable, stylish, and functional
+                environments.
               </p>
-
-              <p className='text-[15px] md:text-[16px] lg:text-[17px] leading-relaxed'>
-                Our mission is the impartation of quality architectural and
-                allied products & services to your residential and commercial
-                environments (e.g., homes, businesses, offices, organizations)
-                for your comfort and well-being.
+              <p className='text-[15px] md:text-[16px] lg:text-[16px]s'>
+                Our mission is simple yet powerful; to enrich residential and
+                commercial spaces through superior-quality products, expert
+                craftsmanship, and sustainable design solutions. Guided by our
+                core values; Innovation, Trust, Integrity, Accountability,
+                Professionalism, and Empathy; we are committed to being a
+                pacesetter in excellent architectural and allied products,
+                delivering precision-driven project executions that seamlessly
+                align with interior and landscape designs.
               </p>
-
-              <p className='text-[15px] md:text-[16px] lg:text-[17px] leading-relaxed'>
-                Thom-Ark Nigeria Limited leverages its core values of
-                innovation, trust, integrity, accountability, professionalism,
-                and empathy to achieve the company's vision of being a
-                pacesetter in executing projects with precision and aligning
-                project implementations with interior and landscape architecture
-                and designs. We are agents of positive and sustainable
-                environmental change.
-              </p>
+              <h3 className='text-[15px] md:text-[16px] lg:text-[17px] leading-relaxed text-thom-black dark:text-white font-bold mb-0'>
+                The company’s logo-signified core values:
+              </h3>
+              <ul className='text-[15px] md:text-[16px] lg:text-[15px] leading-relaxed text-thom-black dark:text-white list-disc list-inside font-normal'>
+                <li>
+                  Innovation – Delivering fresh, forward-thinking solutions.
+                </li>
+                <li>
+                  Trust – Building long-term relationships based on reliability.
+                </li>
+                <li>Integrity – Upholding transparency in all our dealings.</li>
+                <li>
+                  Accountability – Taking full ownership of every project.
+                </li>
+                <li>
+                  Professionalism – Combining expertise with excellent service.
+                </li>
+                <li>Empathy – Understanding and prioritizing client needs.</li>
+              </ul>
             </div>
           </div>
         </div>

@@ -9,43 +9,42 @@ const services = [
     id: 1,
     title: 'Roofing Systems',
     description:
-      'Premium aluminium roofing built to withstand time and elements - crafted for beauty, strength, and reliability.',
+      'Premium aluminium roofing solutions designed for beauty, durability, and all-weather protection.',
     image: '/aluroof.png',
   },
   {
     id: 2,
     title: 'Window & Door Systems',
     description:
-      'High-performance window and door solutions designed for energy efficiency, security, and aesthetic appeal.',
+      'Stylish, secure, and durable window and door series that elevate your space while ensuring safety and comfort.',
     image: '/aluscrol8.png',
   },
-  // {
-  //   id: 3,
-  //   title: 'Interior Partitions Wall Systems',
-  //   description:
-  //     'Flexible and durable interior partition systems that combine functionality with modern design aesthetics.',
-  //   image: '/aluscrol12.png',
-  // },
+  {
+    id: 3,
+    title: 'Interior Partitions Wall Systems',
+    description:
+      'Custom-built partitioning solutions that optimize space and complement your architectural design.',
+    image: '/aluscrol12.png',
+  },
   {
     id: 4,
     title: 'Curtains Wall Systems',
     description:
-      'Innovative curtain wall solutions that provide structural integrity while maximizing natural light.',
+      'Glazed elegant wall systems that merge aesthetics with efficiency, ideal for both interior and exterior beauty.',
     image: '/aluscrol15.png',
   },
   {
     id: 5,
     title: 'Suspended Ceilings & Sunbreakers',
     description:
-      'Advanced ceiling and sunbreaker systems designed for climate control and architectural excellence.',
+      'Modern ceiling solutions with acoustic performance, design flexibility, and visual appeal — combined with sunbreaker systems for natural light control and heat management.',
     image: '/Inner-Content@2x.png',
   },
   {
     id: 6,
-    title:
-      'Sales and Installation Services of Other Building Construction Allied Products',
+    title: 'Allied Products and Installation Services',
     description:
-      'Comprehensive sales and professional installation services for a wide range of building construction products.',
+      'A wide range of innovative products and customized solutions to meet diverse building and design needs.',
     image: '/aluscrol9.png',
   },
 ];
@@ -73,12 +72,11 @@ const Services = () => {
 
         {/* Description */}
         <p className='text-[14px] md:text-[15px] lg:text-[16px] text-gray-600 dark:text-gray-400 leading-relaxed max-w-[900px] mb-12 md:mb-16'>
-          Delivering quality architectural products & services with expert
-          craftsmanship, seamless installation, precision, and style that turn
-          architectural visions into reality. Shaping environments with
-          innovative architectural solutions for environmental sustainability.
-          Our range of architectural and allied products & services include:
-          sales, fabrication, installation and maintenance of the following:
+          We bring architectural designs or visions to reality through sales of
+          architectural and allied products that combine style, durability and
+          precision with expert craftsmanship, seamless installation and
+          maintenance services. Our offerings are designed to enhance
+          aesthetics, improve human comfort, and deliver lasting value.
         </p>
 
         {/* Accordion List */}
