@@ -78,7 +78,7 @@ const Navs: React.FC<HeaderProps> = ({ isDark, toggleTheme }) => {
     <div className='fixed top-0 left-0 w-full bg-white dark:bg-black z-50 shadow-sm transition-colors'>
       {/* Top Contact Bar */}
       <div className='bg-white dark:bg-thom-black border-b border-gray-200 dark:border-gray-800 transition-colors'>
-        <div className='max-w-[1440px] mx-auto px-6 lg:px-20 py-3'>
+        <div className='max-w-[1440px] mx-auto px-6 lg:px-20 py-1'>
           <div className='flex flex-wrap items-center justify-between gap-4 text-sm md:text-base'>
             {/* Contact Info */}
             <div className='flex flex-wrap items-center gap-4 md:gap-6 lg:gap-8'>
@@ -101,7 +101,7 @@ const Navs: React.FC<HeaderProps> = ({ isDark, toggleTheme }) => {
                 aria-label='Call Thom-Ark'
               >
                 <Phone className='w-4 h-4 flex-shrink-0' />
-                <span className='hidden sm:inline'>+234 9023-6129-26</span>
+                <span className='hidden sm:inline'>+234-902-361-2926</span>
               </a>
 
               <div className='h-6 w-px bg-gray-300 dark:bg-gray-700 hidden sm:block' />
@@ -135,7 +135,7 @@ const Navs: React.FC<HeaderProps> = ({ isDark, toggleTheme }) => {
 
       {/* Main Header */}
       <header className='bg-white dark:bg-thom-black transition-colors border-b border-gray-200 dark:border-gray-800'>
-        <nav className='max-w-[1440px] mx-auto px-6 lg:px-20 py-4'>
+        <nav className='max-w-[1440px] mx-auto px-6 lg:px-20 py-2'>
           <div className='flex items-center justify-between'>
             {/* Logo */}
             <button
