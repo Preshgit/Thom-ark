@@ -65,14 +65,17 @@ export default function ServicesDetails() {
   ];
 
   return (
-    <section className='py-4 md:py-8 lg:py-12 bg-white dark:bg-thom-black transition-colors'>
+    <section
+      id='contact&Services'
+      className='py-4 md:py-8 lg:py-12 bg-white dark:bg-thom-black transition-colors'
+    >
       <div className='max-w-[1440px] mx-auto px-6 lg:px-20'>
         <div className='flex flex-col lg:flex-row justify-between gap-12'>
           {/* Left Content */}
           <div className='space-y-8 max-w-xl'>
             <h2 className='text-3xl md:text-4xl lg:text-5xl font-inter-tight text-thom-black dark:text-white'>
-              <span className='font-normal'>Products & </span>
-              <span className='font-playfair-display italic'>Services:</span>
+              <span className='font-normal'>For Contact & </span>
+              <span className='font-playfair-display'>Services:</span>
             </h2>
 
             <div className='space-y-2 text-thom-black/70 dark:text-white/70 text-base md:text-lg'>
@@ -85,7 +88,7 @@ export default function ServicesDetails() {
               <p>
                 And we are available on{' '}
                 <span className='font-semibold text-thom-black dark:text-white'>
-                  WhatsApp 24.7 Monday to Saturday.
+                  WhatsApp 24/7, Monday to Saturday.
                 </span>
               </p>
             </div>
