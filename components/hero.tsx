@@ -65,11 +65,11 @@ export default function Hero() {
             >
               <div className='space-y-6'>
                 <h1 className='font-inter-tight text-white mt-4'>
-                  <span className='block text-4xl sm:text-5xl md:text-6xl lg:text-[58px] xl:text-[64px] leading-tight font-light'>
-                    Innovative Architectural &
+                  <span className='block text-3xl sm:text-4xl md:text-5xl lg:text-[56px] xl:text-[64px] leading-tight font-normal'>
+                    Innovative Architectural
                   </span>
-                  <span className='block font-playfair-display italic font-normal text-3xl sm:text-4xl md:text-5xl lg:text-[56px] xl:text-[64px] leading-tight mt-2'>
-                    Allied Solutions for Modern Living
+                  <span className='block font-playfair-display font-normal text-3xl sm:text-4xl md:text-5xl lg:text-[56px] xl:text-[64px] leading-tight mt-2'>
+                    & Allied Solutions for Modern Living
                   </span>
                 </h1>
                 <p className='text-base sm:text-lg md:text-xl lg:text-2xl text-white/90 leading-relaxed max-w-2xl mx-auto lg:mx-0'>
@@ -80,7 +80,7 @@ export default function Hero() {
               <div className='flex justify-center lg:justify-start'>
                 <a
                   href='#contactus'
-                  className='flex items-center gap-2 bg-primary text-white px-6 py-3.5 rounded-none text-lg font-medium hover:bg-primary-hover transition-all border border-white/10'
+                  className='flex items-center gap-2 bg-primary text-white px-6 py-3.5 rounded-2xl text-lg font-medium hover:bg-primary-hover transition-all border border-white/10'
                 >
                   Contact Us
                 </a>
