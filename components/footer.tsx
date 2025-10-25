@@ -187,13 +187,16 @@ const Footer = () => {
                 <div className='flex items-start gap-3'>
                   <MapPin className='w-5 h-5 flex-shrink-0 mt-1' />
                   <p className='text-[15px] md:text-[16px] leading-relaxed max-w-[360px]'>
-                    Suite C 320, 3rd Floor, Ikeja Plaza, 81 Mobolaji Bank
-                    Anthony Way, Ikeja, Lagos, Nigeria.
+                    Suite C 320, 3rd Floor, Ikeja Plaza,
+                    <br />
+                    81, Mobolaji Bank Anthony Way,
+                    <br />
+                    Ikeja, Lagos, Nigeria.
                   </p>
                 </div>
                 <div className='flex items-center gap-3'>
                   <Phone className='w-5 h-5 flex-shrink-0' />
-                  <p className='text-[16px]'>+234 9023-6129-26</p>
+                  <p className='text-[16px]'>+234-902-361-2926</p>
                 </div>
                 <div className='flex items-center gap-3'>
                   <Mail className='w-5 h-5 flex-shrink-0' />
