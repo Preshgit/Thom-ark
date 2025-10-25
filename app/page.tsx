@@ -52,7 +52,7 @@ const Page: NextPage = () => {
 
   return (
     <div className={isDark ? 'dark' : ''}>
-      <div className='w-full relative bg-white dark:bg-thom-black overflow-hidden transition-colors'>
+      <div className='w-full relative bg-white dark:bg-thom-black overflow-x-hidden transition-colors min-h-screen'>
         {/* Navigation */}
         <Navs isDark={isDark} toggleTheme={toggleTheme} />
 
