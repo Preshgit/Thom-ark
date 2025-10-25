@@ -34,8 +34,8 @@ export default function ProductsShowcase() {
             Our Products in Action
           </h2>
           <p className='text-lg md:text-xl text-thom-black/70 dark:text-white/70 max-w-3xl mx-auto'>
-            From aluminium windows and doors to roofing and ceiling systems —
-            see how Thom-Ark brings strength and style to every space.
+            From aluminium windows and doors to roofing and ceiling systems. See
+            how Thom-Ark brings strength and style to every space.
           </p>
         </div>
       </div>
