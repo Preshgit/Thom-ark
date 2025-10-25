@@ -65,13 +65,14 @@ const Services = () => {
         {/* Section Header */}
         <div className='mb-8 md:mb-12'>
           <h2 className='text-[32px] md:text-[40px] lg:text-[48px] font-inter-tight font-bold text-thom-black dark:text-white'>
-            What We <i className='font-playfair-display font-normal'>Offer</i>
+            What We{' '}
+            <span className='font-playfair-display font-normal'>Offer</span>
           </h2>
-          <div className='w-32 h-1 bg-primary mt-3' />
+          <div className='w-32 md:w-78 h-1 bg-primary mt-3' />
         </div>
 
         {/* Description */}
-        <p className='text-[14px] md:text-[15px] lg:text-[16px] text-gray-600 dark:text-gray-400 leading-relaxed max-w-[900px] mb-12 md:mb-16'>
+        <p className='text-[14px] text-justify md:text-[15px] lg:text-[18px] text-gray-600 dark:text-gray-300 leading-relaxed mb-12 md:mb-16'>
           We bring architectural designs or visions to reality through sales of
           architectural and allied products that combine style, durability and
           precision with expert craftsmanship, seamless installation and

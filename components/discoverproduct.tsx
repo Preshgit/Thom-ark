@@ -6,17 +6,31 @@ import { Phone } from 'lucide-react';
 const products = [
   {
     id: 1,
-    title: 'Polished Aluminium Roofing',
+    title: 'Standard Aluminium Roofing',
     image: '/Inner-Content@2x.png',
   },
-  { id: 2, title: 'Quality Aluminium Doors', image: '/aluscrol8.png' },
+  {
+    id: 2,
+    title: 'Curtain Wall and Quality Aluminium Doors',
+    image: '/aluscrol7.png',
+  },
   { id: 3, title: 'Longspan Aluminium Roofing', image: '/aluroof.png' },
-  { id: 4, title: 'Casement Aluminium Windows', image: '/aluscrol9.png' },
-  { id: 5, title: 'Partition Curtail walls', image: '/aluscrol12.png' },
-  { id: 6, title: 'Ceiling Material', image: '/Inner-Content@2x.png' },
+  {
+    id: 4,
+    title: 'Partition Walls and Suspended ceiling',
+    image: '/aluscrol12.png',
+  },
+  { id: 5, title: 'Glazed front Walls', image: '/aluscrol9.png' },
+  { id: 6, title: 'Quality Windows', image: '/aluscrol10.png' },
 ];
 
 const DiscoverProducts = () => {
+  const scrollToContact = () => {
+    const contactSection = document.getElementById('contact');
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
   return (
     <section
       id='products'
@@ -31,25 +45,25 @@ const DiscoverProducts = () => {
               <div>
                 <h2 className='text-[32px] md:text-[40px] font-inter-tight font-bold text-thom-black dark:text-white leading-tight'>
                   Discover your{' '}
-                  <i className='font-playfair-display font-normal'>
-                    best building product
-                  </i>
+                  <p className='font-playfair-display font-normal italic-none'>
+                    best building products
+                  </p>
                 </h2>
-                <div className='w-32 h-1 bg-primary mt-3' />
+                <div className='w-32 md:w-38 h-1 bg-primary mt-3' />
               </div>
-              <p className='text-[15px] md:text-[16px] text-gray-600 dark:text-gray-400 leading-relaxed'>
+              <p className='text-[15px] md:text-[16px] text-gray-600 dark:text-gray-400 leading-relaxed text-justify'>
                 Discover high-performing products that are purpose-designed for
                 their environment, tailor-made to specific codes, and fully
                 tested to protect against the most extreme conditions.
               </p>
-              <a
-                href='https://cal.com/thomas-akintayo-iewl1u/secret'
-                target='_blank'
-                rel='noopener noreferrer'
-                className='inline-flex items-center gap-2 bg-primary text-white px-6 py-3 rounded-lg text-[16px] font-medium hover:bg-primary-hover transition-all shadow-lg hover:shadow-xl mt-8 cursor-pointer relative z-50 pointer-events-auto'
-              >
-                <Phone className='w-5 h-5' />
-                Contact Us for One
+              <a href='#contactus'>
+                <button
+                  onClick={scrollToContact}
+                  className='inline-flex items-center gap-2 bg-primary text-white px-6 py-3 rounded-lg text-[16px] font-medium hover:bg-primary-hover transition-all shadow-lg hover:shadow-xl mt-8 cursor-pointer relative z-50 pointer-events-auto'
+                >
+                  <Phone className='w-5 h-5' />
+                  Contact Us
+                </button>
               </a>
             </div>
             {/* Product Grid - Only 4 images */}
@@ -89,23 +103,29 @@ const DiscoverProducts = () => {
           {/* Left - Text Content (1/3 width on lg) */}
           <div className='space-y-6 lg:col-span-1 flex flex-col justify-center'>
             <div>
-              <h2 className='text-[48px] font-inter-tight font-bold text-thom-black dark:text-white leading-tight'>
+              <h2 className='text-[48px] font-inter-tight font-semibold text-thom-black dark:text-white leading-tight'>
                 Discover your{' '}
-                <i className='font-playfair-display font-normal'>
+                <p className='font-playfair-display font-normal'>
                   best building product
-                </i>
+                </p>
               </h2>
-              <div className='w-32 h-1 bg-primary mt-3' />
+              <div className='w-38 h-1 bg-primary mt-3' />
             </div>
-            <p className='text-[17px] text-gray-600 dark:text-gray-400 leading-relaxed'>
+            <p className='text-[18px] text-gray-600 dark:text-gray-400 leading-relaxed text-justify'>
               Discover high-performing products that are purpose-designed for
               their environment, tailor-made to specific codes, and fully tested
               to protect against the most extreme conditions.
             </p>
-            <button className='flex items-center gap-2 bg-primary text-white px-6 py-3 rounded-lg text-[16px] font-medium hover:bg-primary-hover transition-all shadow-lg hover:shadow-xl mt-8'>
-              <Phone className='w-5 h-5' />
-              Contact Us for One
-            </button>
+            <a href='#contactus'>
+              {' '}
+              <button
+                onClick={scrollToContact}
+                className='flex items-center gap-2 bg-primary text-white px-6 py-3 rounded-lg text-[16px] font-medium hover:bg-primary-hover transition-all shadow-lg hover:shadow-xl mt-8 cursor-pointer relative spointer-events-auto'
+              >
+                <Phone className='w-5 h-5' />
+                Contact Us
+              </button>
+            </a>
           </div>
           {/* Right - Product Grid (2/3 width on lg) - All 6 images */}
           <div className='lg:col-span-2 grid grid-cols-3 gap-2'>

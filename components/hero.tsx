@@ -73,8 +73,10 @@ export default function Hero() {
                   </span>
                 </h1>
                 <p className='text-base sm:text-lg md:text-xl lg:text-2xl text-white/90 leading-relaxed max-w-2xl mx-auto lg:mx-0'>
-                  Delivering innovative aluminium solutions, roofing, and
-                  ceiling systems designed to redefine modern spaces.
+                  Delivering innovative building systems, designed to redefine
+                  modern spaces.
+                  {/* Delivering innovative aluminium solutions, roofing, and
+                  ceiling systems designed to redefine modern spaces. */}
                 </p>
               </div>
               <div className='flex justify-center lg:justify-start'>

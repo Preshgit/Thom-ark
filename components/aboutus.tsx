@@ -11,11 +11,12 @@ const Aboutus = () => {
         {/* Section Header */}
         <div className='mb-8 md:mb-8'>
           <h2 className='text-[32px] md:text-[40px] lg:text-[48px] font-inter-tight font-bold text-thom-black dark:text-white'>
-            Who We <i className='font-playfair-display font-normal'>Are</i>
+            Who We{' '}
+            <span className='font-playfair-display font-normal'>Are</span>
           </h2>
           <div className='w-32 h-1 bg-primary mt-2' />
-          <p className='mt-4 text-[14px] md:text-[18px] text-gray-600 dark:text-gray-400 max-w-[300px]'>
-            Crafting quality solutions <br /> with integrity and innovation.
+          <p className='mt-4 text-[14px] md:text-[18px] text-gray-600 dark:text-gray-300'>
+            Crafting quality solutions with integrity and innovation.
           </p>
         </div>
 
@@ -46,7 +47,7 @@ const Aboutus = () => {
 
             {/* Company Description */}
             <div className='space-y-4 text-gray-700 dark:text-gray-300'>
-              <p className='text-[15px] md:text-[16px] lg:text-[16px]'>
+              <p className='text-[15px] md:text-[16px] lg:text-[16px] text-justify'>
                 At Thom-Ark Nigeria Limited, we deliver not only quality but
                 innovative architectural and allied solutions (products &amp;
                 services) that redefine modern living while promoting
@@ -56,7 +57,7 @@ const Aboutus = () => {
                 transform spaces into comfortable, stylish, and functional
                 environments.
               </p>
-              <p className='text-[15px] md:text-[16px] lg:text-[16px]s'>
+              <p className='text-[15px] md:text-[16px] lg:text-[16px] text-justify'>
                 Our mission is simple yet powerful; to enrich residential and
                 commercial spaces through superior-quality products, expert
                 craftsmanship, and sustainable design solutions. Guided by our
@@ -66,10 +67,38 @@ const Aboutus = () => {
                 delivering precision-driven project executions that seamlessly
                 align with interior and landscape designs.
               </p>
+
               <h3 className='text-[15px] md:text-[16px] lg:text-[17px] leading-relaxed text-thom-black dark:text-white font-bold mb-0'>
                 The company’s logo-signified core values:
               </h3>
-              <ul className='text-[15px] md:text-[16px] lg:text-[15px] leading-relaxed text-thom-black dark:text-white list-disc list-inside font-normal'>
+              <ul className='text-[15px] md:text-[16px] lg:text-[15px] leading-relaxed text-thom-black dark:text-white list-disc list-inside italic font-normal'>
+                <li>
+                  <span className='font-bold not-italic'>Innovation</span> –
+                  Delivering fresh, forward-thinking solutions.
+                </li>
+                <li>
+                  <span className='font-bold not-italic'>Trust</span> – Building
+                  long-term relationships based on reliability.
+                </li>
+                <li>
+                  <span className='font-bold not-italic'>Integrity</span> –
+                  Upholding transparency in all our dealings.
+                </li>
+                <li>
+                  <span className='font-bold not-italic'>Accountability</span> –
+                  Taking full ownership of every project.
+                </li>
+                <li>
+                  <span className='font-bold not-italic'>Professionalism</span>{' '}
+                  – Combining expertise with excellent service.
+                </li>
+                <li>
+                  <span className='font-bold not-italic'>Empathy</span> –
+                  Understanding and prioritizing client needs.
+                </li>
+              </ul>
+
+              {/* <ul className='text-[15px] md:text-[16px] lg:text-[15px] leading-relaxed text-thom-black dark:text-white list-disc list-inside font-normal'>
                 <li>
                   Innovation – Delivering fresh, forward-thinking solutions.
                 </li>
@@ -84,7 +113,7 @@ const Aboutus = () => {
                   Professionalism – Combining expertise with excellent service.
                 </li>
                 <li>Empathy – Understanding and prioritizing client needs.</li>
-              </ul>
+              </ul> */}
             </div>
           </div>
         </div>
