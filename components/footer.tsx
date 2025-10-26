@@ -16,7 +16,7 @@ const Footer = () => {
             />
           </div>
           {/* Newsletter Section */}{' '}
-          <div className='space-y-4'>
+          {/* <div className='space-y-4'>
             <div>
               <h2 className='text-[28px] leading-tight font-inter-tight font-bold text-thom-black dark:text-white'>
                 Join Our{' '}
@@ -25,9 +25,9 @@ const Footer = () => {
               <p className='text-[14px] mt-2 text-gray-500 dark:text-gray-400 font-normal'>
                 Subscribe for the latest real estate news and insights
               </p>
-            </div>
-            {/* Newsletter Input */}
-            {/* <div className='relative'>
+            </div> */}
+          {/* Newsletter Input */}
+          {/* <div className='relative'>
               <div className='flex items-center gap-3 border border-gray-300 dark:border-gray-700 rounded-[10px] px-4 py-3'>
                 <Mail className='w-5 h-5 text-thom-black dark:text-white flex-shrink-0' />
                 <input
@@ -40,7 +40,7 @@ const Footer = () => {
                 </button>
               </div>
             </div> */}
-          </div>
+          {/* </div> */}
           {/* Quick Links */}
           <div className='space-y-4'>
             <h3 className='text-[20px] font-inter-tight font-semibold text-thom-black dark:text-white'>
@@ -120,8 +120,11 @@ const Footer = () => {
               <div className='flex items-start gap-3'>
                 <MapPin className='w-4 h-4 flex-shrink-0 mt-1' />
                 <p className='text-[14px] leading-relaxed'>
-                  Office : Suite C 320, 3rd Floor, Ikeja Plaza, 81, Mobolaji
-                  Bank Anthony Way, Ikeja, Lagos, Nigeria.
+                  Suite C 320, 3rd Floor, Ikeja Plaza,
+                  <br />
+                  81, Mobolaji Bank Anthony Way,
+                  <br />
+                  Ikeja, Lagos, Nigeria.
                 </p>
               </div>
               <div className='flex items-center gap-3'>
@@ -137,7 +140,7 @@ const Footer = () => {
           {/* Copyright */}
           <div className='pt-6 border-t border-gray-300 dark:border-gray-800'>
             <p className='text-[14px] text-center text-gray-500 dark:text-gray-400 font-normal'>
-              © Thom-Ark Inc. All Rights Reserved.
+              © Thom-Ark Nigeria Limited. All Rights Reserved.
             </p>
           </div>
         </div>
@@ -151,15 +154,15 @@ const Footer = () => {
             {/* Newsletter Section (Left) */}{' '}
             <div className='space-y-1.5 max-w-[510px] flex-shrink-0'>
               {' '}
-              <h2 className='text-[48px] lg:text-[57.6px] leading-[1.1] font-inter-tight font-bold text-thom-black dark:text-white'>
+              {/* <h2 className='text-[48px] lg:text-[57.6px] leading-[1.1] font-inter-tight font-bold text-thom-black dark:text-white'>
                 Join Our
                 <i className='font-playfair-display font-normal'>
                   Newsletter
                 </i>{' '}
               </h2>{' '}
               <p className='text-[18px] lg:text-[20px] text-gray-500 dark:text-gray-400 font-normal'>
-                Subscribe for the latest real estate news and insights{' '}
-              </p>{' '}
+                Subscribe for the latest building products news and insights{' '}
+              </p>{' '} */}
             </div>
             {/* Newsletter Input (Right) */}{' '}
             {/* <div className='relative max-w-[441px] w-full'>
@@ -283,7 +286,7 @@ const Footer = () => {
           </div>
           <div className='w-full h-[1.2px] bg-gray-300 dark:bg-gray-800 mb-6' />
           <p className='text-center text-[16px] md:text-[17px] text-gray-500 dark:text-gray-400'>
-            © Thom-Ark Inc. All Rights Reserved.
+            © Thom-Ark Nigeria Limited. All Rights Reserved.
           </p>
         </div>
       </div>

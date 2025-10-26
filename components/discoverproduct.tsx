@@ -43,9 +43,9 @@ const DiscoverProducts = () => {
             {/* Text Content */}
             <div className='space-y-6 flex flex-col justify-center'>
               <div>
-                <h2 className='text-[32px] md:text-[40px] font-inter-tight font-bold text-thom-black dark:text-white leading-tight'>
+                <h2 className='text-[32px] md:text-[40px] font-playfair-display font-medium text-thom-black dark:text-white leading-tight'>
                   Discover your{' '}
-                  <p className='font-playfair-display font-normal italic-none'>
+                  <p className='font-playfair-display font-medium italic-none'>
                     best building products
                   </p>
                 </h2>
@@ -103,10 +103,10 @@ const DiscoverProducts = () => {
           {/* Left - Text Content (1/3 width on lg) */}
           <div className='space-y-6 lg:col-span-1 flex flex-col justify-center'>
             <div>
-              <h2 className='text-[48px] font-inter-tight font-semibold text-thom-black dark:text-white leading-tight'>
+              <h2 className='text-[48px] font-playfair-display font-medium text-thom-black dark:text-white leading-tight'>
                 Discover your{' '}
-                <p className='font-playfair-display font-normal'>
-                  best building product
+                <p className='font-playfair-display font-medium'>
+                  best building products
                 </p>
               </h2>
               <div className='w-38 h-1 bg-primary mt-3' />

@@ -10,9 +10,9 @@ const Aboutus = () => {
       <div className='max-w-[1440px] mx-auto px-6 md:px-12 lg:px-20 py-4 md:py-8 lg:py-12'>
         {/* Section Header */}
         <div className='mb-8 md:mb-8'>
-          <h2 className='text-[32px] md:text-[40px] lg:text-[48px] font-inter-tight font-bold text-thom-black dark:text-white'>
-            Who We{' '}
-            <span className='font-playfair-display font-normal'>Are</span>
+          <h2 className='text-[32px] md:text-[40px] lg:text-[48px] font-playfair-display font-medium text-thom-black dark:text-white'>
+            Who We Are
+            {/* <span className='font-playfair-display font-normal'>Are</span> */}
           </h2>
           <div className='w-32 h-1 bg-primary mt-2' />
           <p className='mt-4 text-[14px] md:text-[18px] text-gray-600 dark:text-gray-300'>
