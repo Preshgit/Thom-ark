@@ -64,11 +64,10 @@ const Services = () => {
       <div className='max-w-[1440px] mx-auto px-6 md:px-12 lg:px-20 py-4 md:py-8 lg:py-12'>
         {/* Section Header */}
         <div className='mb-8 md:mb-12'>
-          <h2 className='text-[32px] md:text-[40px] lg:text-[48px] font-inter-tight font-bold text-thom-black dark:text-white'>
-            What We{' '}
-            <span className='font-playfair-display font-normal'>Offer</span>
+          <h2 className='text-[32px] md:text-[40px] lg:text-[48px] font-playfair-display font-medium text-thom-black dark:text-white'>
+            What We Offer
           </h2>
-          <div className='w-32 md:w-78 h-1 bg-primary mt-3' />
+          <div className='w-32 h-1 bg-primary mt-3' />
         </div>
 
         {/* Description */}

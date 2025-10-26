@@ -119,7 +119,7 @@ const ContactSection = () => {
                 <div className='absolute top-[15%] left-[10%] flex items-center gap-3'>
                   <div className='w-3 h-3 rounded-full bg-white animate-pulse' />
                   <span className='text-white text-[14px] md:text-[16px] font-medium'>
-                    Quality Aluminium Solutions
+                    Standard Aluminium and Allied Components Solutions
                   </span>
                 </div>
 
@@ -127,15 +127,15 @@ const ContactSection = () => {
                 <div className='absolute top-[45%] left-[10%] flex items-center gap-3'>
                   <div className='w-3 h-3 rounded-full bg-white animate-pulse' />
                   <span className='text-white text-[14px] md:text-[16px] font-medium'>
-                    Custom Budget
+                    Quality Accessories
                   </span>
                 </div>
 
                 {/* Boma windows & Doors */}
-                <div className='absolute bottom-[15%] right-[10%] flex items-center gap-3'>
+                <div className='absolute bottom-[15%] left-[10%] flex items-center gap-3'>
                   <div className='w-3 h-3 rounded-full bg-white animate-pulse' />
                   <span className='text-white text-[14px] md:text-[16px] font-medium'>
-                    Boma windows & Doors
+                    Installation and Maintenance Services
                   </span>
                 </div>
               </div>
