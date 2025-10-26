@@ -59,11 +59,18 @@ const DiscoverProducts = () => {
               <a href='#contactus'>
                 <button
                   onClick={scrollToContact}
-                  className='inline-flex items-center gap-2 bg-primary text-white px-6 py-3 rounded-lg text-[16px] font-medium hover:bg-primary-hover transition-all shadow-lg hover:shadow-xl mt-8 cursor-pointer relative z-50 pointer-events-auto'
+                  className='flex items-center gap-2 bg-primary text-white px-8 py-4 rounded-lg text-[16px] md:text-[18px] font-medium hover:bg-primary-hover transition-all shadow-lg hover:shadow-xl'
                 >
                   <Phone className='w-5 h-5' />
                   Contact Us
                 </button>
+                {/* <button
+                  onClick={scrollToContact}
+                  className='inline-flex items-center gap-2 bg-primary text-white px-6 py-3 rounded-lg text-[16px] font-medium hover:bg-primary-hover transition-all shadow-lg hover:shadow-xl mt-8 cursor-pointer relative z-50 pointer-events-auto'
+                >
+                  <Phone className='w-5 h-5' />
+                  Contact Us
+                </button> */}
               </a>
             </div>
             {/* Product Grid - Only 4 images */}
