@@ -27,7 +27,7 @@ module.exports = {
           dark: 'rgba(255, 255, 255, 0.1)',
         },
         // Keep original colors for backward compatibility
-        'thom-black': '#181818',
+        'thom-black': '#00122E',
         'thom-blue': '#0048b4',
         'black-40': 'rgba(0, 0, 0, 0.4)',
         white: '#fff',

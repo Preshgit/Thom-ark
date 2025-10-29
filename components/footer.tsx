@@ -286,7 +286,7 @@ const Footer = () => {
           </div>
           <div className='w-full h-[1.2px] bg-gray-300 dark:bg-gray-800 mb-6' />
           <p className='text-center text-[16px] md:text-[17px] text-gray-500 dark:text-gray-400'>
-            © Thom-Ark Nigeria Limited. All Rights Reserved.
+            © Thom-Ark Nigeria Limited. All Rights Reserved 2025.
           </p>
         </div>
       </div>

@@ -50,7 +50,7 @@ const WhyThomArk = () => {
         {/* Section Header */}
         <div className='text-center mb-12 md:mb-16'>
           <h2 className='text-[28px] md:text-[36px] lg:text-[42px] font-inter-tight font-bold text-thom-black dark:text-white'>
-            Why Thom Ark Nigeria Limited?
+            Why Thom-Ark Nigeria Limited?
           </h2>
           <div className='w-32 h-1 bg-primary mt-3 mx-auto' />
         </div>

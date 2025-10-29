@@ -21,14 +21,14 @@ const services = [
   },
   {
     id: 3,
-    title: 'Interior Partitions Wall Systems',
+    title: 'Interior Partition Wall Systems',
     description:
       'Custom-built partitioning solutions that optimize space and complement your architectural design.',
     image: '/aluscrol12.png',
   },
   {
     id: 4,
-    title: 'Curtains Wall Systems',
+    title: 'Curtain Wall Systems',
     description:
       'Glazed elegant wall systems that merge aesthetics with efficiency, ideal for both interior and exterior beauty.',
     image: '/aluscrol15.png',
@@ -37,15 +37,35 @@ const services = [
     id: 5,
     title: 'Suspended Ceilings & Sunbreakers',
     description:
-      'Modern ceiling solutions with acoustic performance, design flexibility, and visual appeal — combined with sunbreaker systems for natural light control and heat management.',
-    image: '/Inner-Content@2x.png',
+      'Modern ceiling solutions with acoustic panels, design flexibility, and visual appeal - combined with sunbreaker systems for natural light control and heat management.',
+    image: '/suspendedc.jpg',
   },
   {
     id: 6,
     title: 'Allied Products and Installation Services',
-    description:
-      'A wide range of innovative products and customized solutions to meet diverse building and design needs.',
-    image: '/aluscrol9.png',
+    description: (
+      <>
+        <p>
+          A wide range of innovative products and customized solutions to meet
+          diverse building and design needs, we sell and offer the following:
+        </p>
+        <ul className='list-disc list-inside mt-2'>
+          <li>
+            FLOOR COVERINGS: Laminated Wooden Flooring, SPC Flooring, Vinyl
+            Flooring.
+          </li>
+          <li>
+            ACUBOARD: Acoustic Wall Panels, Acoustic Ceiling Panels,
+            Sound-absorbing Boards.
+          </li>
+          <li>
+            INSTALLATION SERVICES: Professional installation for all our
+            products, ensuring quality and precision.
+          </li>
+        </ul>
+      </>
+    ),
+    image: '/floorfinish.jpeg',
   },
 ];
 
