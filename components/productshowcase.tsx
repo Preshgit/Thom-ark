@@ -15,6 +15,8 @@ const row2Images = [
   '/aluscrol4.png',
   '/aluscrol5.png',
   '/aluscrol2.png',
+  '/sunbreak.jpeg',
+  '/suspendedc.jpg',
 ];
 
 const row3Images = [

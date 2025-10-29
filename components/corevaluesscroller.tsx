@@ -14,7 +14,7 @@ const coreValues = [
 
 const CoreValuesScroller = () => {
   return (
-    <section className='w-full bg-gray-50 dark:bg-thom-black/50 transition-colors overflow-hidden py-12 md:py-16 lg:py-20'>
+    <section className='w-full bg-gray-50 dark:bg-thom-black/50 transition-colors overflow-hidden py-6 md:py-6 lg:py-8'>
       <div className='relative'>
         {/* Scrolling Container */}
         <motion.div

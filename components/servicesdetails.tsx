@@ -1,6 +1,6 @@
 'use client';
 import { Mail, Phone, MapPin, Package } from 'lucide-react';
-import { FaXTwitter, FaInstagram } from 'react-icons/fa6';
+import { FaXTwitter, FaInstagram, FaWhatsapp } from 'react-icons/fa6';
 
 export default function ServicesDetails() {
   const contactDetails = [
@@ -24,6 +24,13 @@ export default function ServicesDetails() {
           Suite C 320, 3rd Floor, Ikeja Plaza,
           <br />
           81, Mobolaji Bank Anthony Way,
+          <br />
+          Ikeja, Lagos, Nigeria.
+          <br />
+          <br />
+          <strong className='text-thom-black dark:text-white'>
+            Factory/Warehouse:
+          </strong>
           <br />
           Ikeja, Lagos, Nigeria.
         </>
@@ -57,11 +64,11 @@ export default function ServicesDetails() {
       href: 'https://www.instagram.com/thomark.ng?igsh=ZnVjcHZ2YTM5c2N3',
       label: 'Instagram',
     },
-    // {
-    //   icon: <FaYoutube className='w-5 h-5' />,
-    //   href: 'https://youtube.com/@thomark',
-    //   label: 'YouTube',
-    // },
+    {
+      icon: <FaWhatsapp className='w-5 h-5' />,
+      href: 'https://www.instagram.com/thomark.ng?igsh=ZnVjcHZ2YTM5c2N3',
+      label: 'WhatsApp',
+    },
   ];
 
   return (

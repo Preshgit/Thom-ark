@@ -11,17 +11,17 @@ const products = [
   },
   {
     id: 2,
-    title: 'Curtain Wall and Quality Aluminium Doors',
+    title: 'Curtain Wall and Standard Aluminium Doors',
     image: '/aluscrol7.png',
   },
   { id: 3, title: 'Longspan Aluminium Roofing', image: '/aluroof.png' },
   {
     id: 4,
-    title: 'Partition Walls and Suspended ceiling',
+    title: 'Partition Walls and Suspended Ceiling',
     image: '/aluscrol12.png',
   },
   { id: 5, title: 'Glazed front Walls', image: '/aluscrol9.png' },
-  { id: 6, title: 'Quality Windows', image: '/aluscrol10.png' },
+  { id: 6, title: 'Standard Aluminium Windows', image: '/aluscrol10.png' },
 ];
 
 const DiscoverProducts = () => {
@@ -36,7 +36,7 @@ const DiscoverProducts = () => {
       id='products'
       className='w-full bg-white dark:bg-thom-black transition-colors scroll-mt-24'
     >
-      <div className='max-w-[1440px] mx-auto px-6 md:px-12 lg:px-20 py-8 md:py-8 lg:py-12'>
+      <div className='max-w-[1440px] mx-auto px-6 md:px-12 lg:px-20 py-4 md:py-4 lg:py-8'>
         {/* MOBILE & TABLET VERSION - Show only 4 images */}
         <div className='lg:hidden'>
           <div className='grid grid-cols-1 gap-12'>
@@ -159,7 +159,7 @@ const DiscoverProducts = () => {
                   }}
                   transition={{ duration: 0.4, ease: 'easeOut' }}
                 >
-                  <h3 className='text-white text-2xl font-inter-tight font-medium'>
+                  <h3 className='text-white text-[20px] font-inter-tight font-medium'>
                     {product.title}
                   </h3>
                 </motion.div>
