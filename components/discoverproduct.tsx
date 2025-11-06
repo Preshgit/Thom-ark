@@ -6,7 +6,7 @@ import { Phone } from 'lucide-react';
 const products = [
   {
     id: 1,
-    title: 'Standard Aluminium Roofing',
+    title: 'Quality Aluminium Roofing',
     image: '/Inner-Content@2x.png',
   },
   {

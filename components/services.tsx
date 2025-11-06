@@ -60,7 +60,7 @@ const services = [
           </li>
           <li>
             INSTALLATION SERVICES: Professional installation for all our
-            products, ensuring quality and precision.
+            products, including Venetian Blinds, ensuring quality and precision.
           </li>
         </ul>
       </>

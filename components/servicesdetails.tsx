@@ -141,7 +141,7 @@ export default function ServicesDetails() {
           {contactDetails.map((detail, index) => (
             <div
               key={index}
-              className='bg-gray-100 dark:bg-gray-800 rounded-2xl p-6 space-y-4 hover:shadow-lg transition-all border border-transparent hover:border-primary/60'
+              className='bg-gray-100 dark:bg-[#0b1026] rounded-2xl p-6 space-y-4 hover:shadow-lg transition-all border border-transparent hover:border-primary/60'
             >
               <div className='w-12 h-12 rounded-full bg-primary/10 dark:bg-primary/20 flex items-center justify-center text-primary'>
                 {detail.icon}

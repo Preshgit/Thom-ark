@@ -144,16 +144,22 @@ const Navs: React.FC<HeaderProps> = ({ isDark, toggleTheme }) => {
             >
               <Image
                 src='/thomarklogo.png'
-                alt='Thom-Ark Engineering & Services'
-                width={162}
-                height={74}
-                className='w-32 md:w-40 h-auto dark:invert dark:brightness-0 dark:contrast-100'
-                priority
+                alt='ThomArk Logo'
+                className='block dark:hidden'
+                width={150}
+                height={50}
+              />
+              <Image
+                src='/thomArk-logo-dark.png'
+                alt='ThomArk Logo Dark'
+                className='hidden dark:block'
+                width={150}
+                height={50}
               />
             </button>
 
             {/* Desktop Nav */}
-            <div className='hidden lg:flex items-center bg-gray-50 dark:bg-gray-900 border border-gray-200 dark:border-gray-800 rounded-full px-12 py-2 gap-3.5'>
+            <div className='hidden lg:flex items-center bg-gray-50 dark:bg-[#0b1026] border border-gray-200 dark:border-gray-800 rounded-full px-12 py-2 gap-3.5'>
               {navItems.map((item) => (
                 <button
                   key={item.id}

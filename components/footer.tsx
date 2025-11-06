@@ -210,11 +210,23 @@ const Footer = () => {
 
             {/* Logo & Links (centered on md) */}
             <div className='flex flex-col items-center space-y-6'>
-              <img
-                src='/thomarklogo.png'
-                alt='Thom-Ark Nigeria Limited'
-                className='h-[48px] w-[180px] object-contain dark:invert dark:brightness-0 dark:contrast-100'
-              />
+              {/* Logo */}
+              <div>
+                {/* Light Mode Logo */}
+                <img
+                  src='/thomarklogo.png'
+                  alt='Thom-Ark Nigeria Limited'
+                  className='h-[48px] w-[180px] object-contain block dark:hidden'
+                />
+
+                {/* Dark Mode Logo */}
+                <img
+                  src='/thomArk-logo-dark.png'
+                  alt='Thom-Ark Nigeria Limited Dark'
+                  className='h-[48px] w-[180px] object-contain hidden dark:block'
+                />
+              </div>
+
               <nav className='flex flex-col items-center space-y-2 text-[16px] text-gray-500 dark:text-gray-400'>
                 <a
                   href='#home'
@@ -286,7 +298,7 @@ const Footer = () => {
           </div>
           <div className='w-full h-[1.2px] bg-gray-300 dark:bg-gray-800 mb-6' />
           <p className='text-center text-[16px] md:text-[17px] text-gray-500 dark:text-gray-400'>
-            © Thom-Ark Nigeria Limited. All Rights Reserved 2025.
+            © 2025 Thom-Ark Nigeria Limited.
           </p>
         </div>
       </div>
