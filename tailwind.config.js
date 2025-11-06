@@ -1,36 +1,34 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  darkMode: 'class', // Enable class-based dark mode
+  darkMode: 'class',
   content: ['./app/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
   theme: {
     extend: {
       colors: {
-        // Semantic color tokens for theming
         background: {
           light: '#FFFFFF',
-          dark: '#181818',
+          dark: '#0b1026', // 🌙 Deep navy blue-black background
         },
         foreground: {
           light: '#181818',
-          dark: '#FFFFFF',
+          dark: '#E6E9F0', // soft off-white for contrast
         },
         primary: {
-          DEFAULT: '#D91D1D', // Red brand color
+          DEFAULT: '#D91D1D',
           hover: '#B91818',
         },
         secondary: {
-          DEFAULT: '#0048B4', // Blue
+          DEFAULT: '#0048B4',
           light: 'rgba(0, 72, 180, 0.1)',
         },
         border: {
           light: 'rgba(0, 0, 0, 0.1)',
-          dark: 'rgba(255, 255, 255, 0.1)',
+          dark: 'rgba(230, 233, 240, 0.1)',
         },
-        // Keep original colors for backward compatibility
         'thom-black': '#00122E',
         'thom-blue': '#0048b4',
         'black-40': 'rgba(0, 0, 0, 0.4)',
-        white: '#fff',
+        white: '#FFFFFF',
         gray: {
           50: '#FAFAFA',
           100: '#F5F5F5',
@@ -45,6 +43,8 @@ module.exports = {
         },
         crimson: '#d91d1d',
         black: '#000',
+        // Optional: a custom dark navy color for reuse
+        'dark-navy': '#0b1026',
       },
       fontFamily: {
         'inter-tight': ['Inter Tight', 'sans-serif'],

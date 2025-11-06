@@ -38,10 +38,18 @@ const Aboutus = () => {
           <div className='space-y-6'>
             {/* Logo */}
             <div className='mb-6 hidden lg:block'>
+              {/* Light Mode Logo */}
               <img
                 src='/thomarklogo.png'
                 alt='Thom-Ark Nigeria Limited'
-                className='h-[50px] md:h-[80px] w-auto object-contain dark:invert dark:brightness-0 dark:contrast-100'
+                className='h-[50px] md:h-[80px] w-auto object-contain block dark:hidden'
+              />
+
+              {/* Dark Mode Logo */}
+              <img
+                src='/thomArk-logo-dark.png'
+                alt='Thom-Ark Nigeria Limited Dark'
+                className='h-[50px] md:h-[80px] w-auto object-contain hidden dark:block'
               />
             </div>
 
@@ -74,7 +82,7 @@ const Aboutus = () => {
               <ul className='text-[15px] md:text-[16px] lg:text-[15px] leading-relaxed text-thom-black dark:text-white list-disc list-inside italic font-normal'>
                 <li>
                   <span className='font-bold not-italic'>Innovation</span> –
-                  Delivering fresh, forward-thinking solutions.
+                  Delivering fresh and forward-thinking solutions.
                 </li>
                 <li>
                   <span className='font-bold not-italic'>Trust</span> – Building
@@ -97,23 +105,6 @@ const Aboutus = () => {
                   Understanding and prioritizing client needs.
                 </li>
               </ul>
-
-              {/* <ul className='text-[15px] md:text-[16px] lg:text-[15px] leading-relaxed text-thom-black dark:text-white list-disc list-inside font-normal'>
-                <li>
-                  Innovation – Delivering fresh, forward-thinking solutions.
-                </li>
-                <li>
-                  Trust – Building long-term relationships based on reliability.
-                </li>
-                <li>Integrity – Upholding transparency in all our dealings.</li>
-                <li>
-                  Accountability – Taking full ownership of every project.
-                </li>
-                <li>
-                  Professionalism – Combining expertise with excellent service.
-                </li>
-                <li>Empathy – Understanding and prioritizing client needs.</li>
-              </ul> */}
             </div>
           </div>
         </div>
