@@ -140,7 +140,7 @@ const Footer = () => {
           {/* Copyright */}
           <div className='pt-6 border-t border-gray-300 dark:border-gray-800'>
             <p className='text-[14px] text-center text-gray-500 dark:text-gray-400 font-normal'>
-              © Thom-Ark Nigeria Limited. All Rights Reserved.
+              © 2025 Thom-Ark Nigeria Limited. All Rights Reserved.
             </p>
           </div>
         </div>
@@ -152,9 +152,8 @@ const Footer = () => {
           <div className='w-full h-[1.2px] bg-gray-300 dark:bg-gray-800 mb-8' />
           <div className='flex items-center justify-between gap-12 lg:gap-20 mb-12 lg:mb-[70px]'>
             {/* Newsletter Section (Left) */}{' '}
-            <div className='space-y-1.5 max-w-[510px] flex-shrink-0'>
-              {' '}
-              {/* <h2 className='text-[48px] lg:text-[57.6px] leading-[1.1] font-inter-tight font-bold text-thom-black dark:text-white'>
+            {/* <div className='space-y-1.5 max-w-[510px] flex-shrink-0'> */}{' '}
+            {/* <h2 className='text-[48px] lg:text-[57.6px] leading-[1.1] font-inter-tight font-bold text-thom-black dark:text-white'>
                 Join Our
                 <i className='font-playfair-display font-normal'>
                   Newsletter
@@ -163,7 +162,7 @@ const Footer = () => {
               <p className='text-[18px] lg:text-[20px] text-gray-500 dark:text-gray-400 font-normal'>
                 Subscribe for the latest building products news and insights{' '}
               </p>{' '} */}
-            </div>
+            {/* </div> */}
             {/* Newsletter Input (Right) */}{' '}
             {/* <div className='relative max-w-[441px] w-full'>
               <div className='flex items-center gap-3 border-2 border-border-light dark:border-border-dark light:bg-black rounded-[14px] px-[29px] py-[16px] dark:bg-gray-900'>
@@ -298,7 +297,7 @@ const Footer = () => {
           </div>
           <div className='w-full h-[1.2px] bg-gray-300 dark:bg-gray-800 mb-6' />
           <p className='text-center text-[16px] md:text-[17px] text-gray-500 dark:text-gray-400'>
-            © 2025 Thom-Ark Nigeria Limited.
+            © 2025 Thom-Ark Nigeria Limited. All Rights Reserved.
           </p>
         </div>
       </div>

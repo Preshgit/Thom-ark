@@ -65,7 +65,7 @@ const services = [
         </ul>
       </>
     ),
-    image: '/floorfinish.jpeg',
+    image: '/floor1.jpeg',
   },
 ];
 

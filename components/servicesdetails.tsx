@@ -91,13 +91,13 @@ export default function ServicesDetails() {
               <p>
                 We are available for calls on:{' '}
                 <span className='font-semibold text-thom-black dark:text-white'>
-                  Monday & Thursday 10am - 6pm.
+                  Mondays & Thursdays 10am - 5pm.
                 </span>{' '}
               </p>
               <p>
                 And we are available on{' '}
                 <span className='font-semibold text-thom-black dark:text-white'>
-                  WhatsApp 24/7, Monday to Saturday.
+                  WhatsApp 24/7, Mondays to Saturdays.
                 </span>
               </p>
             </div>
