@@ -8,10 +8,12 @@ const row1Images = [
   '/aluscrol7.png',
   '/aluscrol6.png',
   '/aluscrol13.png',
+  '/Curtain-Wall-Systems.jpg',
 ];
 
 const row2Images = [
   '/aluscrol3.png',
+  '/floor2.jpeg',
   '/aluscrol4.png',
   '/aluscrol5.png',
   '/aluscrol2.png',
@@ -20,8 +22,9 @@ const row2Images = [
 ];
 
 const row3Images = [
+  '/slide3.jpg',
+  '/slide6.jpg',
   '/aluscrol10.png',
-  '/aluscrol11.png',
   '/aluscrol12.png',
   '/aluscrol13.png',
   '/aluscrol14.png',
@@ -36,7 +39,8 @@ export default function ProductsShowcase() {
             Designs in Action
           </h2>
           <p className='text-lg md:text-xl text-thom-black/70 dark:text-white/70 max-w-3xl mx-auto'>
-            Roofing | Windows | Doors | Curtain Walls | Partition | Ceiling
+            Roofing | Windows | Doors | Curtain Walls | Partition | Ceiling |
+            Sunbreaker
             {/* From aluminium windows and doors to roofing and ceiling systems. See
             how Thom-Ark brings strength and style to every space. */}
           </p>
