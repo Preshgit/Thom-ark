@@ -14,7 +14,7 @@ const coreValues = [
 
 const CoreValuesScroller = () => {
   return (
-    <section className='w-full bg-gray-50 dark:bg-thom-black/50 transition-colors overflow-hidden py-6 md:py-6 lg:py-8'>
+    <section className='w-full bg-gray-50 dark:bg-thom-black/50 transition-colors overflow-hidden py-4 md:py-4'>
       <div className='relative'>
         {/* Scrolling Container */}
         <motion.div
@@ -37,7 +37,7 @@ const CoreValuesScroller = () => {
               key={`first-${index}`}
               className='flex-shrink-0 text-gray-400 dark:text-gray-600 font-inter-tight font-light tracking-wider'
             >
-              <span className='text-[48px] md:text-[72px] lg:text-[96px] xl:text-[120px] leading-none whitespace-nowrap'>
+              <span className='text-[48px] md:text-[52px] lg:text-[62px] xl:text-[62px] leading-none whitespace-nowrap'>
                 {value}
               </span>
             </div>
@@ -49,7 +49,7 @@ const CoreValuesScroller = () => {
               key={`second-${index}`}
               className='flex-shrink-0 text-gray-400 dark:text-gray-600 font-inter-tight font-light tracking-wider'
             >
-              <span className='text-[48px] md:text-[72px] lg:text-[96px] xl:text-[120px] leading-none whitespace-nowrap'>
+              <span className='text-[48px]md:text-[52px] lg:text-[62px] xl:text-[62px] leading-none whitespace-nowrap'>
                 {value}
               </span>
             </div>

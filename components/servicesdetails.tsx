@@ -89,15 +89,15 @@ export default function ServicesDetails() {
 
             <div className='space-y-2 text-thom-black/70 dark:text-white/70 text-base md:text-lg'>
               <p>
-                We are available for calls on:{' '}
+                We are available for calls on{' '}
                 <span className='font-semibold text-thom-black dark:text-white'>
-                  Mondays & Thursdays 10am - 5pm.
+                  Mondays & Thursdays: 10am - 5pm.
                 </span>{' '}
               </p>
               <p>
                 And we are available on{' '}
                 <span className='font-semibold text-thom-black dark:text-white'>
-                  WhatsApp 24/7, Mondays to Saturdays.
+                  WhatsApp 24/6, Mondays to Saturdays.
                 </span>
               </p>
             </div>

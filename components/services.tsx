@@ -50,6 +50,7 @@ const services = [
           diverse building and design needs, we sell and offer the following:
         </p>
         <ul className='list-disc list-inside mt-2'>
+          <li>GLAZING SOLUTIONS: Glass space solutions and products.</li>
           <li>
             FLOOR COVERINGS: Laminated Wooden Flooring, SPC Flooring, Vinyl
             Flooring.
@@ -92,11 +93,12 @@ const Services = () => {
 
         {/* Description */}
         <p className='text-[14px] text-justify md:text-[15px] lg:text-[18px] text-gray-600 dark:text-gray-300 leading-relaxed mb-12 md:mb-16'>
-          We bring architectural designs or visions to reality through sales of
-          architectural and allied products that combine style, durability and
-          precision with expert craftsmanship, seamless installation and
-          maintenance services. Our offerings are designed to enhance
-          aesthetics, improve human comfort, and deliver lasting value.
+          With our international affiliates, we bring architectural designs or
+          visions to reality through sales of architectural and allied products
+          that combine style, durability and precision with expert
+          craftsmanship, seamless installation and maintenance services. Our
+          international offerings are designed to enhance aesthetics, improve
+          human comfort, and deliver lasting value.
         </p>
 
         {/* Accordion List */}
