@@ -9,10 +9,18 @@ const Footer = () => {
         <div className='flex flex-col space-y-8'>
           {/* Logo */}
           <div className='w-full'>
+            {/* Light mode logo */}
             <img
               src='/thomarklogo.png'
               alt='Thom-Ark Nigeria Limited'
-              className='h-[60px] w-auto object-contain dark:invert dark:brightness-0 dark:contrast-100'
+              className='h-[60px] w-auto object-contain block dark:hidden'
+            />
+
+            {/* Dark mode logo */}
+            <img
+              src='/thomArk-logo-dark.png'
+              alt='Thom-Ark Nigeria Limited Dark'
+              className='h-[60px] w-auto object-contain hidden dark:block'
             />
           </div>
           {/* Newsletter Section */}{' '}

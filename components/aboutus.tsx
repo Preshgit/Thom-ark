@@ -25,7 +25,7 @@ const Aboutus = () => {
           {/* Left - Image */}
           <div className='w-full hidden lg:block relative lg:h-[90vh] min-h-[500px] overflow-hidden'>
             <Image
-              src='/roof101.jpg'
+              src='/Inner-Content@2x.png'
               alt='Modern architectural building with quality roofing'
               width={716}
               height={847}
