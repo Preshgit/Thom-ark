@@ -23,32 +23,7 @@ const Footer = () => {
               className='h-[60px] w-auto object-contain hidden dark:block'
             />
           </div>
-          {/* Newsletter Section */}{' '}
-          {/* <div className='space-y-4'>
-            <div>
-              <h2 className='text-[28px] leading-tight font-inter-tight font-bold text-thom-black dark:text-white'>
-                Join Our{' '}
-                <i className='font-playfair-display font-normal'>Newsletter</i>
-              </h2>
-              <p className='text-[14px] mt-2 text-gray-500 dark:text-gray-400 font-normal'>
-                Subscribe for the latest real estate news and insights
-              </p>
-            </div> */}
-          {/* Newsletter Input */}
-          {/* <div className='relative'>
-              <div className='flex items-center gap-3 border border-gray-300 dark:border-gray-700 rounded-[10px] px-4 py-3'>
-                <Mail className='w-5 h-5 text-thom-black dark:text-white flex-shrink-0' />
-                <input
-                  type='email'
-                  placeholder='Enter your email'
-                  className='flex-1 bg-transparent text-[16px] text-thom-black dark:text-white placeholder:text-gray-400 dark:placeholder:text-gray-500 outline-none font-normal'
-                />
-                <button className='w-10 h-10 rounded-full bg-primary hover:bg-primary-hover flex items-center justify-center flex-shrink-0 transition-colors'>
-                  <ArrowRight className='w-4 h-4 text-white' />
-                </button>
-              </div>
-            </div> */}
-          {/* </div> */}
+
           {/* Quick Links */}
           <div className='space-y-4'>
             <h3 className='text-[20px] font-inter-tight font-semibold text-thom-black dark:text-white'>
@@ -141,7 +116,7 @@ const Footer = () => {
               </div>
               <div className='flex items-center gap-3'>
                 <Mail className='w-4 h-4 flex-shrink-0' />
-                <p className='text-[14px]'>info@thom-ark.com</p>
+                <p className='text-[14px]'>thom-ark@thom-ark.com</p>
               </div>
             </div>
           </div>
@@ -158,34 +133,7 @@ const Footer = () => {
       <div className='hidden md:block w-full'>
         <div className='max-w-[1440px] mx-auto px-8 md:px-10 lg:px-20 py-12'>
           <div className='w-full h-[1.2px] bg-gray-300 dark:bg-gray-800 mb-8' />
-          <div className='flex items-center justify-between gap-12 lg:gap-20 mb-12 lg:mb-[70px]'>
-            {/* Newsletter Section (Left) */}{' '}
-            {/* <div className='space-y-1.5 max-w-[510px] flex-shrink-0'> */}{' '}
-            {/* <h2 className='text-[48px] lg:text-[57.6px] leading-[1.1] font-inter-tight font-bold text-thom-black dark:text-white'>
-                Join Our
-                <i className='font-playfair-display font-normal'>
-                  Newsletter
-                </i>{' '}
-              </h2>{' '}
-              <p className='text-[18px] lg:text-[20px] text-gray-500 dark:text-gray-400 font-normal'>
-                Subscribe for the latest building products news and insights{' '}
-              </p>{' '} */}
-            {/* </div> */}
-            {/* Newsletter Input (Right) */}{' '}
-            {/* <div className='relative max-w-[441px] w-full'>
-              <div className='flex items-center gap-3 border-2 border-border-light dark:border-border-dark light:bg-black rounded-[14px] px-[29px] py-[16px] dark:bg-gray-900'>
-                <Mail className='w-[21.6px] h-[21.6px] text-thom-black dark:text-white flex-shrink-0' />
-                <input
-                  type='email'
-                  placeholder='Enter your email'
-                  className='flex-1 bg-transparent text-[18px] lg:text-[21.6px] text-thom-black dark:text-white placeholder:text-gray-400 dark:placeholder:text-gray-500 outline-none font-normal'
-                />
-                <button className='w-12 h-12 rounded-full bg-red-600 hover:bg-red-700 flex items-center justify-center transition-colors'>
-                  <ArrowRight className='w-5 h-5 text-white' />
-                </button>
-              </div>
-            </div> */}
-          </div>
+
           {/* Adjust grid for tablet */}
           <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-10 md:gap-14 lg:gap-20 mb-10'>
             {/* Contact Info */}
@@ -210,7 +158,7 @@ const Footer = () => {
                 </div>
                 <div className='flex items-center gap-3'>
                   <Mail className='w-5 h-5 flex-shrink-0' />
-                  <p className='text-[16px]'>info@thom-ark.com</p>
+                  <p className='text-[16px]'>thom-ark@thom-ark.com</p>
                 </div>
               </div>
             </div>

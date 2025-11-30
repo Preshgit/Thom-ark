@@ -7,7 +7,7 @@ export default function ServicesDetails() {
     {
       icon: <Mail className='w-5 h-5' />,
       label: 'Email',
-      value: 'info@thom-ark.com',
+      value: 'thom-ark@thom-ark.com',
       href: 'mailto:info@thom-ark.com',
     },
     {
@@ -66,7 +66,7 @@ export default function ServicesDetails() {
     },
     {
       icon: <FaWhatsapp className='w-5 h-5' />,
-      href: 'https://www.instagram.com/thomark.ng?igsh=ZnVjcHZ2YTM5c2N3',
+      href: 'https://wa.me/2349039336563',
       label: 'WhatsApp',
     },
   ];

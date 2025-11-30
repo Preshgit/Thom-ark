@@ -41,8 +41,6 @@ export default function ProductsShowcase() {
           <p className='text-lg md:text-xl text-thom-black/70 dark:text-white/70 max-w-3xl mx-auto'>
             Roofing | Windows | Doors | Curtain Walls | Partition | Ceiling |
             Sunbreaker
-            {/* From aluminium windows and doors to roofing and ceiling systems. See
-            how Thom-Ark brings strength and style to every space. */}
           </p>
         </div>
       </div>
