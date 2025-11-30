@@ -89,7 +89,7 @@ const Navs: React.FC<HeaderProps> = ({ isDark, toggleTheme }) => {
                 aria-label='Send email'
               >
                 <Mail className='w-4 h-4 flex-shrink-0' />
-                <span className='hidden sm:inline'>info@thom-ark.com</span>
+                <span className='hidden sm:inline'>thom-ark@thom-ark.com</span>
               </a>
 
               <div className='h-6 w-px bg-gray-300 dark:bg-gray-700 hidden md:block' />
