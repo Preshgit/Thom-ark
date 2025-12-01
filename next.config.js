@@ -2,6 +2,7 @@ const path = require('path');
 
 const nextConfig = {
   reactStrictMode: true,
+  output: 'export', // ✅ Add this line for static export
   images: {
     remotePatterns: [
       {
@@ -11,7 +12,6 @@ const nextConfig = {
       },
     ],
   },
-  // ✅ Correct placement
   outputFileTracingRoot: path.join(__dirname),
 };
 
