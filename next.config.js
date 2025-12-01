@@ -2,8 +2,10 @@ const path = require('path');
 
 const nextConfig = {
   reactStrictMode: true,
-  output: 'export', // ✅ Add this line for static export
+  output: 'export', // Static export enabled
+
   images: {
+    unoptimized: true, // FIX: Required for static export
     remotePatterns: [
       {
         protocol: 'https',
@@ -12,6 +14,7 @@ const nextConfig = {
       },
     ],
   },
+
   outputFileTracingRoot: path.join(__dirname),
 };
 

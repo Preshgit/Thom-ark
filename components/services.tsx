@@ -31,7 +31,7 @@ const services = [
     title: 'Curtain Wall Systems',
     description:
       'Glazed elegant wall systems that merge aesthetics with efficiency, ideal for both interior and exterior beauty.',
-    image: '/aluscrol15.png',
+    image: '/glazing_ext.jpg',
   },
   {
     id: 5,

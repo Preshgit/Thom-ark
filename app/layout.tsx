@@ -20,7 +20,7 @@ export const metadata = {
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
-    <html lang='en'>
+    <html lang='en' suppressHydrationWarning>
       <head>
         {/* Favicon fallback (Next.js handles it automatically if metadata is set) */}
         <link rel='icon' href='/favicon.ico' sizes='any' />
@@ -41,7 +41,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
           }}
         />
       </head>
-      <body>
+      <body suppressHydrationWarning>
         <AppRouterCacheProvider options={{ enableCssLayer: true }}>
           {/* Wrap your app with NextThemeProvider first */}
           <NextThemeProvider
