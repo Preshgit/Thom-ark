@@ -90,7 +90,7 @@ const Footer = () => {
                 rel='noopener noreferrer'
                 className='block hover:text-thom-black dark:hover:text-white transition-colors'
               >
-                Twitter
+                X
               </a>
             </div>
           </div>
@@ -245,7 +245,7 @@ const Footer = () => {
                     rel='noopener noreferrer'
                     className='block hover:text-thom-black dark:hover:text-white transition-colors'
                   >
-                    Twitter
+                    X
                   </a>
                 </div>
               </>

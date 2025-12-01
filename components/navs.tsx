@@ -57,9 +57,7 @@ const Navs: React.FC<HeaderProps> = ({ isDark, toggleTheme }) => {
   }, []);
 
   const handleThemeToggle = (e: React.MouseEvent) => {
-    // e.preventDefault();
-    // e.stopPropagation();
-    toggleTheme();
+        toggleTheme();
   };
 
   const scrollToSection = (sectionId: string) => {

@@ -57,7 +57,7 @@ export default function ServicesDetails() {
     {
       icon: <FaXTwitter className='w-5 h-5' />,
       href: 'https://x.com/Thomark_ng',
-      label: 'Twitter',
+      label: 'X',
     },
     {
       icon: <FaInstagram className='w-5 h-5' />,
@@ -82,9 +82,6 @@ export default function ServicesDetails() {
           <div className='space-y-8 max-w-xl'>
             <h2 className='text-3xl md:text-4xl lg:text-5xl font-inter-tight text-thom-black dark:text-white'>
               <span className='font-normal'>For Contact & Services</span>
-              {/* <span className='font-playfair-display'>
-                For Contact & Services:
-              </span> */}
             </h2>
 
             <div className='space-y-2 text-thom-black/70 dark:text-white/70 text-base md:text-lg'>
