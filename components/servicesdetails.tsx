@@ -57,7 +57,7 @@ export default function ServicesDetails() {
     {
       icon: <FaXTwitter className='w-5 h-5' />,
       href: 'https://x.com/Thomark_ng',
-      label: 'Twitter',
+      label: 'X',
     },
     {
       icon: <FaInstagram className='w-5 h-5' />,
