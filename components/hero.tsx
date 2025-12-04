@@ -67,7 +67,7 @@ export default function Hero() {
                   <span className='block text-3xl sm:text-4xl md:text-5xl lg:text-[56px] xl:text-[64px] leading-tight font-normal'>
                     Innovative Architectural
                   </span>
-                  <span className='block font-playfair-display font-normal text-3xl sm:text-4xl md:text-5xl lg:text-[56px] xl:text-[64px] leading-tight mt-2'>
+                  <span className='block text-3xl sm:text-4xl md:text-5xl lg:text-[56px] xl:text-[64px] leading-tight mt-2'>
                     & Allied Solutions for Modern Living
                   </span>
                 </h1>

@@ -10,7 +10,7 @@ import muiTheme from '../theme';
 export const metadata = {
   title: 'Thom-ark',
   description:
-    'Thom-Ark Nigeria Limited is a resourceful company complementing architectural designs for modernity and environmental sustainability with quality architectural and allied products & services.',
+    'At Thom-Ark Nigeria Limited, we deliver not only quality but innovative architectural and allied solutions (products & services) that redefine modern living while promoting environmental sustainability.',
   icons: {
     icon: '/favicon.ico',
     shortcut: '/favicon.ico',

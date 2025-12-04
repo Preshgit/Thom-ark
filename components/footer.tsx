@@ -69,7 +69,7 @@ const Footer = () => {
             </h3>
             <div className='space-y-3 text-[16px] text-gray-500 dark:text-gray-400 font-normal'>
               <a
-                href='https://www.instagram.com/thomark.ng?igsh=ZnVjcHZ2YTM5c2N3'
+                href='https://www.instagram.com/thomark_ng/'
                 target='_blank'
                 rel='noopener noreferrer'
                 className='block hover:text-thom-black dark:hover:text-white transition-colors'
@@ -77,7 +77,7 @@ const Footer = () => {
                 Instagram
               </a>
               <a
-                href='https://www.linkedin.com/company/thomark-ng/'
+                href='https://www.linkedin.com/company/thomark_ng/'
                 target='_blank'
                 rel='noopener noreferrer'
                 className='block hover:text-thom-black dark:hover:text-white transition-colors'
@@ -85,7 +85,7 @@ const Footer = () => {
                 Linkedin
               </a>
               <a
-                href='https://x.com/Thomark_ng'
+                href='https://x.com/thomark_ng'
                 target='_blank'
                 rel='noopener noreferrer'
                 className='block hover:text-thom-black dark:hover:text-white transition-colors'
@@ -224,7 +224,7 @@ const Footer = () => {
                 </h3>
                 <div className='md:ml-5 lg:ml-0 block space-y-3 md:flex md:flex-row lg:flex-col md:gap-4 lg:gap-0 text-[16px] text-gray-500 dark:text-gray-400 md:mt-2 lg:mt-0'>
                   <a
-                    href='https://www.instagram.com/thomark.ng?igsh=ZnVjcHZ2YTM5c2N3'
+                    href='https://www.instagram.com/thomark_ng/'
                     target='_blank'
                     rel='noopener noreferrer'
                     className='block hover:text-thom-black dark:hover:text-white transition-colors'
@@ -232,7 +232,7 @@ const Footer = () => {
                     Instagram
                   </a>
                   <a
-                    href='https://www.linkedin.com/company/thomark-ng/'
+                    href='https://www.linkedin.com/company/thomark_ng/'
                     target='_blank'
                     rel='noopener noreferrer'
                     className='block hover:text-thom-black dark:hover:text-white transition-colors'
@@ -240,7 +240,7 @@ const Footer = () => {
                     Linkedin
                   </a>
                   <a
-                    href='https://x.com/Thomark_ng'
+                    href='https://x.com/thomark_ng'
                     target='_blank'
                     rel='noopener noreferrer'
                     className='block hover:text-thom-black dark:hover:text-white transition-colors'

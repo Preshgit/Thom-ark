@@ -57,7 +57,7 @@ const Navs: React.FC<HeaderProps> = ({ isDark, toggleTheme }) => {
   }, []);
 
   const handleThemeToggle = (e: React.MouseEvent) => {
-        toggleTheme();
+    toggleTheme();
   };
 
   const scrollToSection = (sectionId: string) => {
@@ -87,7 +87,7 @@ const Navs: React.FC<HeaderProps> = ({ isDark, toggleTheme }) => {
                 aria-label='Send email'
               >
                 <Mail className='w-4 h-4 flex-shrink-0' />
-                <span className='hidden sm:inline'>thom-ark@thom-ark.com</span>
+                <span className='hidden sm:inline'>info@thom-ark.com</span>
               </a>
 
               <div className='h-6 w-px bg-gray-300 dark:bg-gray-700 hidden md:block' />
@@ -175,7 +175,7 @@ const Navs: React.FC<HeaderProps> = ({ isDark, toggleTheme }) => {
 
             {/* CTA Button - Desktop */}
             <a
-              href='https://cal.com/thomas-akintayo-iewl1u/meeting'
+              href='https://cal.com/thom-ark/meeting'
               target='_blank'
               rel='noopener noreferrer'
               className='hidden lg:flex items-center gap-2 bg-primary text-white px-6 py-3 rounded-lg font-medium hover:bg-primary-hover transition-all'

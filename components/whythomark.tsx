@@ -6,7 +6,7 @@ import { Phone, CheckCircle2 } from 'lucide-react';
 const features = [
   {
     id: 1,
-    title: 'Quality Aluminium Solutions',
+    title: 'Building Product Solutions',
     description: 'Durable, stylish, and built to last.',
   },
   {

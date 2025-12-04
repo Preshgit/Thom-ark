@@ -66,7 +66,7 @@ export default function ServicesDetails() {
     },
     {
       icon: <FaWhatsapp className='w-5 h-5' />,
-      href: 'https://wa.me/2349039336563',
+      href: 'https://wa.me/2349023612926',
       label: 'WhatsApp',
     },
   ];
