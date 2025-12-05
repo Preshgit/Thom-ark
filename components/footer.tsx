@@ -1,5 +1,5 @@
 import React from 'react';
-import { MapPin, Phone, Mail, ArrowRight } from 'lucide-react';
+import { MapPin, Phone, Mail } from 'lucide-react';
 
 const Footer = () => {
   return (
@@ -37,7 +37,7 @@ const Footer = () => {
                 Home
               </a>
               <a
-                href='#about'
+                href='#aboutus'
                 className='block hover:text-thom-black dark:hover:text-white transition-colors'
               >
                 About us
@@ -55,7 +55,7 @@ const Footer = () => {
                 Services
               </a>
               <a
-                href='#contact'
+                href='#contactus'
                 className='block hover:text-thom-black dark:hover:text-white transition-colors'
               >
                 Contact Us
@@ -69,7 +69,7 @@ const Footer = () => {
             </h3>
             <div className='space-y-3 text-[16px] text-gray-500 dark:text-gray-400 font-normal'>
               <a
-                href='https://www.instagram.com/thomark_ng/'
+                href='https://www.instagram.com/thomark.ng/'
                 target='_blank'
                 rel='noopener noreferrer'
                 className='block hover:text-thom-black dark:hover:text-white transition-colors'
@@ -190,7 +190,7 @@ const Footer = () => {
                   Home
                 </a>
                 <a
-                  href='#about'
+                  href='#aboutus'
                   className='hover:text-thom-black dark:hover:text-white transition-colors'
                 >
                   About us
@@ -208,7 +208,7 @@ const Footer = () => {
                   Services
                 </a>
                 <a
-                  href='#contact'
+                  href='#contactus'
                   className='hover:text-thom-black dark:hover:text-white transition-colors'
                 >
                   Contact Us
@@ -224,7 +224,7 @@ const Footer = () => {
                 </h3>
                 <div className='md:ml-5 lg:ml-0 block space-y-3 md:flex md:flex-row lg:flex-col md:gap-4 lg:gap-0 text-[16px] text-gray-500 dark:text-gray-400 md:mt-2 lg:mt-0'>
                   <a
-                    href='https://www.instagram.com/thomark_ng/'
+                    href='https://www.instagram.com/thomark.ng/'
                     target='_blank'
                     rel='noopener noreferrer'
                     className='block hover:text-thom-black dark:hover:text-white transition-colors'

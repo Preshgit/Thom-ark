@@ -245,7 +245,7 @@ const Navs: React.FC<HeaderProps> = ({ isDark, toggleTheme }) => {
               </button>
             ))}
             <a
-              href='https://cal.com/thomas-akintayo-iewl1u/meeting'
+              href='https://cal.com/thom-ark/meeting'
               target='_blank'
               rel='noopener noreferrer'
               className='block'

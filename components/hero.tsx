@@ -64,10 +64,10 @@ export default function Hero() {
             >
               <div className='space-y-6'>
                 <h1 className='font-inter-tight text-white mt-4'>
-                  <span className='block text-3xl sm:text-4xl md:text-5xl lg:text-[56px] xl:text-[64px] leading-tight font-normal'>
+                  <span className='block text-3xl sm:text-4xl md:text-5xl lg:text-[56px] xl:text-[64px] leading-tight  font-normal'>
                     Innovative Architectural
                   </span>
-                  <span className='block text-3xl sm:text-4xl md:text-5xl lg:text-[56px] xl:text-[64px] leading-tight mt-2'>
+                  <span className='block text-3xl sm:text-4xl md:text-5xl lg:text-[56px] xl:text-[64px] leading-tight font-normal mt-2'>
                     & Allied Solutions for Modern Living
                   </span>
                 </h1>
